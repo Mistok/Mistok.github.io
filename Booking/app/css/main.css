@@ -1,0 +1,458 @@
+body {
+  text-align: center;
+  background-size: cover;
+  background: #f4f4f4;
+  color: #333;
+  font: 14px/16px 'Raleway', sans-serif;
+  color: #333;
+  font-family: 'Raleway', sans-serif; }
+
+.content {
+  display: inline-block;
+  max-width: 90%;
+  min-width: 320px;
+  line-height: 24px;
+  text-align: justify;
+  padding: 20px 15px; }
+
+.elem {
+  background: #fff;
+  max-width: 875px; }
+
+.main-room-section {
+  max-height: 265px;
+  font-size: 0;
+  position: relative;
+  -webkit-border-bottom: 1px solid #ebebeb;
+  -moz-border-bottom: 1px solid #ebebeb;
+  -ms-border-bottom: 1px solid #ebebeb;
+  -o-border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  vertical-align: top; }
+  .main-room-section .photo-slider {
+    display: inline-block;
+    max-width: 285px;
+    max-height: 265px;
+    position: relative; }
+    .main-room-section .photo-slider img {
+      max-width: 285px;
+      max-height: 265px;
+      box-shadow: none;
+      transition: 0.6s;
+      cursor: pointer; }
+      .main-room-section .photo-slider img:hover {
+        -webkit-box-shadow: 2px 2px 7px 0px #3587e0;
+        -moz-box-shadow: 2px 2px 7px 0px #3587e0;
+        box-shadow: 2px 2px 7px 0px #3587e0; }
+    .main-room-section .photo-slider .slider-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 13px 14px; }
+      .main-room-section .photo-slider .slider-header h1 {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px; }
+      .main-room-section .photo-slider .slider-header h3 {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin-top: 4px;
+        font-size: 18px; }
+      .main-room-section .photo-slider .slider-header a {
+        position: absolute;
+        top: 68px;
+        left: -5px;
+        background: #fab91c;
+        padding: 6px 24px 6px 18px;
+        border-radius: 3px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 16px; }
+    .main-room-section .photo-slider .photo-quantity {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      color: #fff;
+      font-size: 14px;
+      font-family: "Raleway", sans-serif;
+      font-weight: bold; }
+  .main-room-section .features {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 285px);
+    vertical-align: top;
+    padding: 14px 20px; }
+  .main-room-section .features-container {
+    vertical-align: top;
+    display: inline-block;
+    width: 67%;
+    /* room features section */ }
+    .main-room-section .features-container .features {
+      padding: 15px 0 0 20px;
+      font-size: 14px;
+      cursor: pointer; }
+    .main-room-section .features-container .room-settings {
+      font-size: 14px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      -webkit-border-bottom: 1px solid #ebebeb;
+      -moz-border-bottom: 1px solid #ebebeb;
+      -ms-border-bottom: 1px solid #ebebeb;
+      -o-border-bottom: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb; }
+    .main-room-section .features-container .features-header {
+      font-size: 16px;
+      font-weight: 700; }
+    .main-room-section .features-container .settings-list {
+      display: inline-block;
+      width: 100%; }
+      .main-room-section .features-container .settings-list .setting-item {
+        display: inline-block;
+        position: relative;
+        width: 49.5%;
+        height: 38px;
+        padding: 5px 0 5px 3px;
+        vertical-align: top;
+        line-height: 1rem;
+        /* Room setting icons */ }
+        .main-room-section .features-container .settings-list .setting-item::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%; }
+        .main-room-section .features-container .settings-list .setting-item img, .main-room-section .features-container .settings-list .setting-item span {
+          display: inline-block;
+          vertical-align: middle; }
+        .main-room-section .features-container .settings-list .setting-item span {
+          max-width: 60%;
+          margin-left: 15px; }
+        .main-room-section .features-container .settings-list .setting-item img {
+          margin-left: 3px; }
+        .main-room-section .features-container .settings-list .setting-item sup {
+          display: inline-block;
+          position: absolute;
+          font-size: 8px;
+          top: 5px; }
+    .main-room-section .features-container .room-settings:nth-child(2) {
+      -webkit-border-bottom: none;
+      -moz-border-bottom: none;
+      -ms-border-bottom: none;
+      -o-border-bottom: none;
+      border-bottom: none; }
+
+.more-button {
+  color: #3587e0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: .4s;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  .more-button:hover {
+    color: #3587e0;
+    text-shadow: 2px 2px 3px rgba(53, 135, 224, 0.54); }
+
+.settings-more-button {
+  display: block;
+  text-align: center; }
+
+/* swimming poll block styles */
+.swimming-pool {
+  display: inline-block;
+  position: absolute;
+  padding: 5px 20px 5px 10px;
+  left: 0;
+  bottom: -3px;
+  -moz-border-radius: 0px 4px 0px 4px;
+  -webkit-border-radius: 0px 4px 0px 4px;
+  border-radius: 0px 4px 0px 4px;
+  box-shadow: 0px 0px 0px 0px white;
+  transition: .5s;
+  background: #3587e0;
+  color: #fff;
+  cursor: pointer; }
+  .swimming-pool::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .swimming-pool:hover {
+    -webkit-box-shadow: 2px -2px 7px 0px #eff539;
+    -moz-box-shadow: 2px -2px 7px 0px #eff539;
+    box-shadow: 2px -2px 7px 0px #eff539; }
+  .swimming-pool img, .swimming-pool span {
+    display: inline-block;
+    vertical-align: middle; }
+  .swimming-pool span {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: 400; }
+
+/* Offers section styles*/
+.offers-section {
+  padding: 10px;
+  position: relative; }
+  .offers-section .offers-section-header {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 10px 3px; }
+
+/* ofers elements styles */
+.offer-element {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  margin: 0 0 10px 0;
+  padding: 0 0 0px 0;
+  background: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  transition: .4s;
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  vertical-align: top; }
+  .offer-element .offer-col {
+    display: table-cell;
+    height: 90%;
+    width: 23.3%;
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    vertical-align: top;
+    padding: 12px 5px 20px 10px; }
+    .offer-element .offer-col:first-child {
+      width: 287px; }
+
+/* first in list offer*/
+.offer-top {
+  border: none;
+  background: #eaf3fc;
+  border-bottom: 3px solid #3587e0; }
+
+.info {
+  cursor: pointer; }
+
+/* Cancelation column styles*/
+.cancel-col-list li {
+  position: relative;
+  white-space: nowrap; }
+
+.cancel-col-list .cancel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #42be56;
+  display: inline-block; }
+  .cancel-col-list .cancel::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  .cancel-col-list .cancel span, .cancel-col-list .cancel img {
+    display: inline-block;
+    vertical-align: middle; }
+  .cancel-col-list .cancel span {
+    margin-left: 10px; }
+  .cancel-col-list .cancel .info {
+    margin-left: 5px; }
+
+.cancel-col-list .cancel.paying {
+  list-style-type: disc !important;
+  font-size: 12px;
+  margin: 4px 0 0 30px;
+  color: #333; }
+
+/* Room features column styles*/
+.offer-featere-list {
+  padding-left: 25px;
+  display: inline-block; }
+  .offer-featere-list .offer-feature-item {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 0 0 0; }
+    .offer-featere-list .offer-feature-item ::before {
+      content: '';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    .offer-featere-list .offer-feature-item span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+    .offer-featere-list .offer-feature-item img {
+      display: inline-block;
+      vertical-align: middle; }
+
+/* Total price column styles */
+.total-price .price {
+  margin: 5px auto 0 auto;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  padding: 0 0 0 25px; }
+
+.total-price .length {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.total-price .price-old {
+  display: block;
+  padding: 0 0 0 25px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #ababab; }
+
+.total-price .price-best {
+  color: #42be56;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px; }
+
+/* Booking section */
+.buy {
+  margin: 0 auto;
+  background: #42be56;
+  border: none;
+  outline: none;
+  width: 80%;
+  color: #fff;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: .4s;
+  box-shadow: 0;
+  cursor: pointer; }
+  .buy:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0.5); }
+  .buy:active {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 2px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 0 -60px rgba(0, 0, 0, 0) inset, 2px 2px 4px rgba(255, 255, 0, 0.5) inset; }
+
+.more-rates-button {
+  display: block;
+  padding: 15px;
+  text-align: center; }
+
+@media only screen and (max-width: 985px) {
+  /* Top section media*/
+  .main-room-section .features {
+    padding: 20px;
+    margin-bottom: 25px; }
+    .main-room-section .features .features-container {
+      width: 100%; }
+  /* Offer section media */
+  .offers-section {
+    position: relative; }
+  .offer-element {
+    padding: 10px; }
+    .offer-element .offer-featere-list {
+      padding: 0px;
+      font-size: 12px; }
+    .offer-element .swimming-pool {
+      padding: 5px;
+      font-size: 12px; }
+  .total-price .price, .total-price .price-old, .total-price .length {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px; }
+  .total-price .price-old {
+    font-size: 18px; }
+  .total-price .length {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 788px) {
+  /* Top section media*/
+  .main-room-section {
+    max-height: 800px; }
+    .main-room-section .features {
+      margin-bottom: 0; }
+      .main-room-section .features .features-container .setting-item {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%; }
+    .main-room-section .settings-more-button {
+      text-align: right;
+      margin-top: 20px; }
+  /* offer section styles */
+  .offer-element .offer-col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle; }
+  .offer-element .offer-col:first-child {
+    width: 50%;
+    vertical-align: top; }
+  .offer-element .price, .offer-element .length {
+    text-align: left;
+    margin-top: 0; } }
+
+@media only screen and (max-width: 550px) {
+  .main-room-section {
+    text-align: center; }
+    .main-room-section .photo-slider {
+      display: inline-block; }
+      .main-room-section .photo-slider img {
+        width: auto;
+        max-width: 320px;
+        max-height: auto; }
+    .main-room-section .features {
+      width: 100%; }
+      .main-room-section .features .features-container .setting-item {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%; }
+    .main-room-section .settings-more-button {
+      margin-top: 0; } }
+
+@media only screen and (max-width: 475px) {
+  /* features section */
+  .features .settings-list {
+    display: inline-block;
+    width: 100%; }
+  /* offer section styles */
+  .offer-element .offer-col {
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4; }
+  .offer-element .offer-col:first-child {
+    width: 100%;
+    vertical-align: top; }
+  .offer-element .offer-col .buy {
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 0 20px 0; } }

@@ -1,0 +1,92 @@
+@media only screen and (max-width: 985px) {
+  /* Top section media*/
+  .main-room-section .features {
+    padding: 20px;
+    margin-bottom: 25px; }
+    .main-room-section .features .features-container {
+      width: 100%; }
+  /* Offer section media */
+  .offers-section {
+    position: relative; }
+  .offer-element {
+    padding: 10px; }
+    .offer-element .offer-featere-list {
+      padding: 0px;
+      font-size: 12px; }
+    .offer-element .swimming-pool {
+      padding: 5px;
+      font-size: 12px; }
+  .total-price .price, .total-price .price-old, .total-price .length {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px; }
+  .total-price .price-old {
+    font-size: 18px; }
+  .total-price .length {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 788px) {
+  /* Top section media*/
+  .main-room-section {
+    max-height: 800px; }
+    .main-room-section .features {
+      margin-bottom: 0; }
+      .main-room-section .features .features-container .setting-item {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%; }
+    .main-room-section .settings-more-button {
+      text-align: right;
+      margin-top: 20px; }
+  /* offer section styles */
+  .offer-element .offer-col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle; }
+  .offer-element .offer-col:first-child {
+    width: 50%;
+    vertical-align: top; }
+  .offer-element .price, .offer-element .length {
+    text-align: left;
+    margin-top: 0; } }
+
+@media only screen and (max-width: 550px) {
+  .main-room-section {
+    text-align: center; }
+    .main-room-section .photo-slider {
+      display: inline-block; }
+      .main-room-section .photo-slider img {
+        width: auto;
+        max-width: 320px;
+        max-height: auto; }
+    .main-room-section .features {
+      width: 100%; }
+      .main-room-section .features .features-container .setting-item {
+        height: auto;
+        margin-bottom: 5px;
+        width: 100%; }
+    .main-room-section .settings-more-button {
+      margin-top: 0; } }
+
+@media only screen and (max-width: 475px) {
+  /* features section */
+  .features .settings-list {
+    display: inline-block;
+    width: 100%; }
+  /* offer section styles */
+  .offer-element .offer-col {
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4; }
+  .offer-element .offer-col:first-child {
+    width: 100%;
+    vertical-align: top; }
+  .offer-element .offer-col .buy {
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 0 20px 0; } }
