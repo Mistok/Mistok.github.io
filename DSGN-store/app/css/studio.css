@@ -1,0 +1,74 @@
+.studio {
+  width: 100%;
+  position: relative;
+  vertical-align: top; }
+
+.studio-logo {
+  display: inline-block;
+  position: relative;
+  vertical-align: text-top;
+  width: 31%;
+  height: 500px;
+  line-height: 50px;
+  font-size: 48px;
+  background: #ebb240;
+  background-image: linear-gradient(to bottom right, transparent 49.99%, #e9eae2, transparent 50%); }
+  .studio-logo h1 {
+    display: inline-block;
+    position: absolute;
+    right: 23%;
+    bottom: 31%;
+    text-transform: uppercase;
+    color: #fff; }
+
+.studio-content {
+  width: 68%;
+  height: 500px;
+  font-size: 0;
+  display: inline-block;
+  position: relative;
+  padding: 90px 165px 55px 115px;
+  vertical-align: text-top; }
+  .studio-content .studio-left-col, .studio-content .studio-right-col {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: text-top; }
+  .studio-content .studio-header {
+    font-family: 'RC-i';
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 22px;
+    margin-bottom: 30px; }
+    .studio-content .studio-header p:first-child {
+      margin-bottom: 10px; }
+  .studio-content .studio-text {
+    font-family: "RC-l";
+    padding-right: 22px; }
+    .studio-content .studio-text p {
+      margin-bottom: 10px; }
+  .studio-content .studio-right-col {
+    padding-left: 20px; }
+    .studio-content .studio-right-col .studio-picture {
+      width: 370px;
+      height: 200px;
+      background: url(../img/studiou.png) no-repeat center;
+      background-size: cover;
+      margin-bottom: 40px; }
+    .studio-content .studio-right-col h2 {
+      font-weight: bold;
+      border-bottom: 1px solid #dfe0d9;
+      text-transform: uppercase;
+      font-family: "RC-b";
+      line-height: 22px;
+      margin-bottom: 20px; }
+    .studio-content .studio-right-col .studio-awards-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase; }
+      .studio-content .studio-right-col .studio-awards-container a {
+        display: block; }

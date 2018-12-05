@@ -1,0 +1,56 @@
+.section-team {
+  padding: 70px 165px 90px 165px;
+  display: flex;
+  justify-content: space-between; }
+
+.team-mate {
+  max-width: 270px; }
+
+.team-info {
+  max-width: 265px; }
+  .team-info h2 {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .team-info p {
+    margin-bottom: 15px;
+    line-height: 16px;
+    font-family: "RC-l";
+    word-wrap: break-word; }
+
+.team-mate {
+  min-width: 265px; }
+  .team-mate .team-mate-photo {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 15px; }
+  .team-mate .team-mate-1 {
+    background: #fff url(../img/team1.png) no-repeat -68px -54px; }
+  .team-mate .team-mate-2 {
+    background: url(../img/team2.png) no-repeat -143px -54px; }
+  .team-mate .team-mate-3 {
+    background: url(../img/team3.png) no-repeat -21px -13px; }
+  .team-mate .team-mate-name {
+    font-family: 'RC-b';
+    font-size: 13px;
+    text-transform: uppercase; }
+  .team-mate .team-mate-position {
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .team-mate .team-mate-links {
+    display: flex;
+    justify-content: space-between; }
+    .team-mate .team-mate-links .team-mate-cv {
+      text-transform: uppercase;
+      color: #fd5000;
+      display: inline-flex;
+      align-content: center; }
+      .team-mate .team-mate-links .team-mate-cv span {
+        margin-left: 5px;
+        margin-right: 5px; }
+    .team-mate .team-mate-links .team-mate-socials a {
+      height: 25px;
+      width: 25px;
+      margin-left: 10px; }

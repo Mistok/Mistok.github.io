@@ -1,0 +1,157 @@
+/* ofers elements styles */
+.offer-element {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  margin: 0 0 10px 0;
+  padding: 0 0 0px 0;
+  background: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  transition: .4s;
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  vertical-align: top; }
+  .offer-element .offer-col {
+    display: table-cell;
+    height: 90%;
+    width: 23.3%;
+    text-align: left;
+    font-size: 12px;
+    position: relative;
+    vertical-align: top;
+    padding: 12px 5px 20px 10px; }
+    .offer-element .offer-col:first-child {
+      width: 287px; }
+
+/* first in list offer*/
+.offer-top {
+  border: none;
+  background: #eaf3fc;
+  border-bottom: 3px solid #3587e0; }
+
+.info {
+  cursor: pointer; }
+
+/* Cancelation column styles*/
+.cancel-col-list li {
+  position: relative;
+  white-space: nowrap; }
+
+.cancel-col-list .cancel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #42be56;
+  display: inline-block; }
+  .cancel-col-list .cancel::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  .cancel-col-list .cancel span, .cancel-col-list .cancel img {
+    display: inline-block;
+    vertical-align: middle; }
+  .cancel-col-list .cancel span {
+    margin-left: 10px; }
+  .cancel-col-list .cancel .info {
+    margin-left: 5px; }
+
+.cancel-col-list .cancel.paying {
+  list-style-type: disc !important;
+  font-size: 12px;
+  margin: 4px 0 0 30px;
+  color: #333; }
+
+/* Room features column styles*/
+.offer-featere-list {
+  padding-left: 25px;
+  display: inline-block; }
+  .offer-featere-list .offer-feature-item {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 0 0 0; }
+    .offer-featere-list .offer-feature-item ::before {
+      content: '';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    .offer-featere-list .offer-feature-item span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+    .offer-featere-list .offer-feature-item img {
+      display: inline-block;
+      vertical-align: middle; }
+
+/* Total price column styles */
+.total-price .price {
+  margin: 5px auto 0 auto;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  padding: 0 0 0 25px; }
+
+.total-price .length {
+  display: inline-block;
+  padding: 0 0 0 25px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.total-price .price-old {
+  display: block;
+  padding: 0 0 0 25px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #ababab; }
+
+.total-price .price-best {
+  color: #42be56;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px; }
+
+/* Booking section */
+.buy {
+  margin: 0 auto;
+  background: #42be56;
+  border: none;
+  outline: none;
+  width: 80%;
+  color: #fff;
+  padding: 12px 0;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: .4s;
+  box-shadow: 0;
+  cursor: pointer; }
+  .buy:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0.5); }
+  .buy:active {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 2px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 0 -60px rgba(0, 0, 0, 0) inset, 2px 2px 4px rgba(255, 255, 0, 0.5) inset; }

@@ -1,0 +1,56 @@
+@import "variables.scss";
+@import "fonts.scss";
+body{
+	width: auto;
+    background-size: cover;
+    background: $grey;
+	font: 14px/16px 'RC-r', sans-serif;
+    font-family: 'RC-r', sans-serif;
+}
+.wrapper{
+	min-width: 1500px;		
+}
+.section-header{
+	display: flex;
+	flex-direction: row;		
+}
+.logo-block{		
+	display: flex;
+	flex-basis: 69%;
+	background: $grey;
+	padding: 50px 0 0 165px;
+	.logo-block-right-col,.logo-block-left-col{
+		display: flex;
+		flex-basis: 28%;
+	}
+	.logo-block-right-col{
+      flex-basis: 72%;
+		img{
+			margin: 20px 0 0 15px;
+		}
+	} 
+}
+.slogan{
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	max-width: 50px;
+}
+.socials{
+	margin-top: 60px;
+	margin-left: 25px;
+	display: inline-block;
+	a{
+		height: 25px;
+		width: 25px;
+		margin-right: 10px;
+	}
+}
+@import "main-menu.scss";
+@import "products.scss";
+@import "studio.scss";
+@import "team.scss";
+@import "news.scss";
+@import "footer.scss";
+
+@import "media-queries.scss";
