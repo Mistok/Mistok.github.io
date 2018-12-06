@@ -1,10 +1,5 @@
 
-/* Hidden menu show */
-jQuery(document).ready(function($) {
-			$('.hamburger').click(function(event) {
-				$('.content_container,.main_menu,.hidden_menu,.head_wrapper').toggleClass('active');
-			});
-		});
+
 
 /* Monochrome to color script */
 
@@ -20,28 +15,36 @@ function getColor(){
 function getMonochrome(){
     event.target.classList.remove('un_visible');
 }
+
 /* quotes slider */
 
 let quoteBoll = document.getElementsByClassName('value_ball');
 let quote = document.getElementsByClassName('quote');
-let lastActiveQuote;
-let lastActiveBoll;
 for (ball of quoteBoll){
    	ball.addEventListener('click', showQuote);
 }
 function showQuote(){
-    if(lastActiveQuote && lastActiveQuote != event.target.nextElementSibling){lastActiveQuote.classList.remove('quote-active');};
-    if(lastActiveBoll && lastActiveQuote != event.target){lastActiveBoll.classList
-		.remove('quote-boll-active') };
-	lastActiveQuote = event.target.nextElementSibling;
-	lastActiveBoll = event.target;
+
+    for(elem of quoteBoll){
+    	if(elem.classList.contains('quote-boll-active')){
+    		elem.classList.remove('quote-boll-active');
+    		elem.nextElementSibling.classList.remove('quote-active');
+		}
+	}
 	event.target.classList.add('quote-boll-active');
 	event.target.nextElementSibling.classList.add('quote-active');
 }
-function hideQuote(){
-    lastActiveQuote.classList.remove('quote-active');
-    lastActiveBoll.classList.remove('quote-active');
-}
+
+
+// JQuery functions
+/* Hidden menu*/
+
+jQuery(document).ready(function($) {
+    $('.hamburger').click(function(event) {
+        $('.content_container,.main_menu,.hidden_menu,.head_wrapper').toggleClass('active');
+    });
+});
+
 /* Smooth references */
 
 $(document).ready(function(){
