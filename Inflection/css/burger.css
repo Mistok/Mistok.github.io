@@ -1,0 +1,105 @@
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+h1 {
+    text-align: center;
+}
+.burger-container{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #2b9fe9;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    right: -35%;
+    top: 6%;
+    -webkit-transition: 0.6s ease-in-out ;
+    -o-transition: 0.6s ease-in-out ;
+    transition: 0.6s ease-in-out ;
+}
+.hamburger {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #2b9fe9;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2,.bar3 {
+    top: 13.5px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER */
+
+.hamburger .bar4 {
+    top: 13.5px;
+}
+.hamburger .bar5 {
+    bottom: 0px;
+}
+.hamburger .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+.hamburger .bar2 {
+    width: 1px;
+    transform: rotate(90deg);
+    left: 13.5px;
+}
+.hamburger .bar3 {
+    width: 1px;
+    left: 13.5px;
+}
+.checkbox ~ .burger-container{
+    border: none;
+}
+.checkbox:checked + label > .hamburger > .bar1{
+    top: 13.5px;
+    background-color: transparent;
+}
+.checkbox:checked + label > .hamburger > .bar2{
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+.checkbox:checked + label > .hamburger > .bar3{
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+.checkbox:checked + label > .hamburger > .bar4{
+    background-color: transparent;
+}
+.checkbox:checked + label > .hamburger > .bar5{
+    bottom: 13.5px;
+    background-color: transparent;
+}
