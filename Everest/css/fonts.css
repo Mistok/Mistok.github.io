@@ -1,0 +1,28 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'News_Cycle_fat';
+    src: url('../fonts/News_Cycle_fat.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News_Cycle_regular';
+    src: url('../fonts/News_Cycle_regular.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robot_regular';
+    src: url('../fonts/robot_regular.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robot_fat';
+    src: url('../fonts/robot_fat.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
