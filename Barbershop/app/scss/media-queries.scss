@@ -1,0 +1,526 @@
+@import "variables.scss";
+@media only screen and (max-width: 1250px) {
+
+  //GENERAL
+  body{
+    font-size: 20px;
+  }
+  .wrapper{
+    display: inline-block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  section{
+    padding: 100px 0;
+  }
+  .section-header {
+    font-size: 32px;
+    font-family: $Notica;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  //MAIN MENU
+
+  .menu-item{
+    a{
+      font-size: 18px;
+      padding: 16px;
+      font-weight: 700;
+    }
+  }
+  .main_photo{
+    height: 610px;
+    background: $grey url(../img/main_bg.png) no-repeat -500px -79px;
+    h1{
+      font-size: 44px;
+      line-height: 50px;
+    }
+  }
+
+  // ABOUT section
+  .about-items-container{
+    margin-top: 80px;
+    padding: 0;
+  }
+  .about-item {
+    max-width: 280px;
+    padding: 80px 10px 20px;
+    position: relative;
+    h3 {
+      font-family: $Notica;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  // GALLERY
+  .gallery-row{
+    flex-wrap: wrap;
+  }
+  .gallery-item{
+    flex: 0 1 calc(25% - 10px)
+  }
+  // CONTACTS
+  .contacts .wrapper .subscribe{
+    width: 60%;
+  }
+  .contacts .wrapper .blog-item{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .contacts .wrapper .insta-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header{
+    height: 80px;
+    padding: 10px 0;
+    border-bottom: 1px solid $md-grey;
+    .fa{
+      color: $brown;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  }
+  .header_block{
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 14px ;
+    line-height: 16px;
+  }
+
+  /* search block */
+
+  .form_container{
+    margin: 0 5px;
+  }
+  .search.active{
+    width: 80px !important;
+  }
+  // MAIN MENU
+  nav{
+    height: 50px;
+    .wrapper{
+      padding: 0;
+    }
+  }
+  .main-menu{
+    height: 50px;
+  }
+  .menu-item{
+    a{
+      font-size: 14px;
+    }
+  }
+  // ABOUT
+  .about-item {
+    max-width: 220px;
+    padding: 60px 10px 20px;
+    position: relative;
+    h3{
+      font-size: 16px;
+    }
+    .about-item-text{
+      font-size: 14px;
+    }
+  }
+  // SERVICES
+  .services  {
+    background-size: 40%;
+    padding-bottom: 100px;
+    .wrapper:nth-child(2) {
+      width: 90%;
+      padding-top: 70px;
+    }
+  }
+  .service-item:nth-child(1){
+    margin-bottom: 80px;
+  }
+  .service-left-col, .service-right-col {
+    font-size: 22px;
+    width: 45%;
+  }
+  .service-left-col {
+    .service-item{
+      padding-right: 110px;
+    }
+  }
+  .service-right-col {
+    .service-item{
+      padding-left: 110px;
+    }
+  }
+  .service-text{
+    font-size: 18px;
+  }
+  //TEAM
+  .team{
+    padding-bottom: 134px;
+  }
+  .team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .teammate{
+    .team-photo{
+      height: 400px;
+    }
+    .barber1{
+      background: url("../img/barber1.jpg") no-repeat center center;
+    }
+    .barber2{
+      background: url("../img/barber2.jpg") no-repeat center center;
+    }
+    .barber3{
+      background: url("../img/barber3.jpg") no-repeat center top;
+    }
+    p{
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  //GENERAL
+  body{
+    font-size: 16px;
+  }
+  .section-gutter{
+    padding:10px;
+  }
+  .main_photo{
+    background: #7f7f7f url(../img/main_bg.png) no-repeat -100px bottom;
+    -webkit-background-size: 140%;
+    background-size: 140%;
+  }
+  //CLIENTS
+  .clients-quote{
+    margin-top: 15px;
+  }
+  .clients-text{
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  // FOOTER
+  footer .wrapper{
+    align-items: center;
+  }
+  .copyright{
+    line-height: 28px;
+   }
+  .socials{
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 680px) {
+
+    // HEADER
+  header{
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $md-grey;
+    .wrapper{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: space-between;
+    }
+    .fa{
+      color: $brown;
+      padding: 15px;
+      font-size: 22px;
+    }
+  }
+  .header_block{
+    min-width: 50%;
+    padding: 5px;
+    border-bottom: 1px dashed $grey;
+    font-size: 12px;
+    line-height: 16px;
+    .address-text{
+      p{
+        white-space: normal;
+      }
+    }
+  }
+  .search.active {
+    width: 90% !important;
+  }
+  // NAVIGATION
+  nav{
+    height: auto;
+    .wrapper{
+      padding: 0px;
+    }
+  }
+  .main-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    z-index: 3;
+    left: -100%; // hiding menu on 475 screens
+    transition: .5s ease-in-out;
+  }
+  .menu-show{
+    position: fixed;
+    //top: 50px;
+    left: 0;
+  }
+  .menu-item{
+    width: 100%;
+    height: auto;
+    a{
+      font-size: 20px;
+      text-transform: uppercase;
+      width: 100%;
+      display: block;
+      padding: 25px;
+      font-weight: 700;
+      &:hover{
+        border-bottom: none;
+      }
+    }
+  }
+
+  /* Burger */
+
+  .hamburger-container {
+    display: inline-block;
+  }
+  /* Fixed menu */
+  .headhesive{
+    position: fixed;
+    .main-menu{
+      height: 100vh;
+      padding-top: 0px;
+      a{
+        padding: 10px;
+      }
+    }
+  }
+  .headhesive--stick{
+    transform: translateY(0);
+  }
+
+  /* Main photo */
+
+  .main_photo{
+    height: 400px;
+    background: $grey url(../img/main_bg.png) no-repeat -300px -0px;
+    background-size: 150%;
+    .wrapper{
+      text-align: left;
+      height: 100%;
+      position: relative;
+    }
+    h1{
+      font-size: 22px;
+      line-height: 26px;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .appointment-link{
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+  }
+  //ABOUT
+  .about-items-container{
+    flex-direction: column;
+  }
+  .about-item{
+    max-width: none;
+    margin-bottom: 60px;
+  }
+  .about-img{
+    top: -25%
+  }
+  //STATISTICS
+  .statistics-block{
+    padding: 25px;
+    h1{
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  //SERVICES
+  .services{
+    background-size: 33%;
+    padding-bottom: 35%;
+    .wrapper:nth-child(2) {
+      width: 90%;
+      padding-top: 70px;
+    }
+    .service-item{
+      margin-bottom: 25px;
+      .service-text{
+        text-align: justify;
+        margin-top: 25px;
+      }
+    }
+    .service-left-col, .service-right-col {
+      font-size: 22px;
+      width: 100%;
+    }
+    .service-left-col {
+      .service-item{
+        padding-right: 140px;
+      }
+    }
+  }
+  //TEAM
+  .team-container{
+    flex-direction: column;
+    justify-content: center;
+    .teammate{
+      width: auto;
+      margin-bottom: 25px;
+      .team-photo{
+        height: 320px;
+      }
+    }
+  }
+  //PRICES
+  .prices-container{
+    flex-direction: column;
+    padding: 20px;
+    .price-col{
+      width: auto;
+      margin: 0 0 25px 0;
+    }
+  }
+  // CONTACTS
+  .contacts{
+    .wrapper{
+      flex-direction: column;
+      .contact-col{
+        width: auto;
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+        margin: 25px 0;
+      }
+      .schedule-left-col,.service-right-col{
+        text-align: center;
+      }
+      .insta-container{
+        max-width: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  //GENERAL
+  body{
+    font-size: 16px;
+  }
+  section{
+    padding: 50px 0;
+    .section-text{
+      width: 90%;
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+  .section-header {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .section-text{
+    width: 70%;
+    font-size: 16px;
+  }
+  //HEADER
+  .main_photo{
+    background: $md-grey url(../img/main_bg.png) no-repeat -130px bottom;
+    -webkit-background-size: 180%;
+    background-size: 180%;
+  }
+  //APPOINTMENT
+  .appointment-form{
+    padding-top: 10px;
+    input{
+      margin-bottom: 12px;
+    }
+    select{
+      margin-bottom: 12px;
+    }
+    textarea{
+      height: 50px;
+    }
+  }
+  .appointment-top{
+    flex-direction: column;
+  }
+  .app-left-col, .app-right-col {
+    width: 100%;
+  }
+  //TEAM
+  .team{
+    padding-bottom: 40px;
+  }
+  .team-container {
+    flex-direction: column;
+    .teammate {
+      width: auto;
+      &:first-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  //STATISTICS
+  .statistics-block{
+    padding: 20px;
+    h1{
+      font-size: 25px;
+      line-height: 25px;
+    }
+    span{
+      font-size: 14px;
+    }
+  }
+  //GALLERY
+  .gallery-photos{
+    overflow: hidden;
+  }
+  //FOOTER
+  .contacts{
+    .wrapper{
+      .insta-container{
+        padding-left: 0;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 340px) {
+  //SERVICES
+  .services{
+    .wrapper:nth-child(2){
+      padding-top: 20px;
+    }
+    .service-left-col{
+      .service-item{
+        padding-right: 110px;
+      }
+    }
+  }
+}

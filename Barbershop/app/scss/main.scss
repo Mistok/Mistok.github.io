@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+// General
+
+body{
+  background-size: cover;
+  background: $white;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $Quattro;
+  color: $black;
+  text-align: center;
+}
+.wrapper{
+  display: inline-block;
+  margin: 0 auto;
+  width: 1170px;
+}
+section{
+  padding: 150px 0;
+}
+.section-header {
+  font-size: 42px;
+  font-family: $Notica;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section-gutter {
+  padding: 18px;
+  position: relative;
+  max-width: 350px;
+  display: inline-block;
+  &:before, &:after {
+    content: '';
+    height: 2px;
+    width: 90px;
+    background-color: $brown;
+    position: relative;
+    display: inline-block;
+  }
+  &:before {
+    left: -12px;
+    bottom: 7px;
+  }
+  &:after {
+    left: 12px;
+    bottom: 7px;
+  }
+}
+.rated-star{
+  color: $brown;
+}
+@import "header.scss";
+@import "about.scss";
+@import "statistics.scss";
+@import "services.scss";
+@import "appointment.scss";
+@import "team.scss";
+@import "clients.scss";
+@import "gallery.scss";
+@import "prices.scss";
+@import "contacts.scss";
+@import "footer.scss";
+@import "media-queries.scss";

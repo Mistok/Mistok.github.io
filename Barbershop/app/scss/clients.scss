@@ -1,0 +1,34 @@
+/* Clients section */
+
+@import "variables.scss";
+
+.clients{
+  background: url("../img/hearing_bg.jpg") no-repeat -141px -387px;
+  .wrapper{
+    color: $white;
+
+  }
+
+}
+.clients-quote{
+  margin-top: 40px;
+}
+.clients-text{
+  margin-top: 30px;
+  font-size: 18px;
+  width: 70%;
+  display: inline-block;
+}
+.clients-pic{
+  margin-top: 55px;
+  display: inline-block;
+  height: 105px;
+  width: 105px;
+  border-radius: 50%;
+  background: url("../img/client.png") no-repeat center center;
+}
+.clients-name{
+  font-size: 20px;
+  font-family: $Notica;
+  padding: 10px 10px 0px 10px;
+}

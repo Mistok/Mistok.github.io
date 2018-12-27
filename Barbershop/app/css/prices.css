@@ -1,0 +1,41 @@
+/* Prices section */
+.prices {
+  padding-top: 140px; }
+
+.prices-container {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .prices-container .price-col {
+    width: 30%;
+    margin-left: 30px; }
+    .prices-container .price-col .price-col-header, .prices-container .price-col .price-col-footer {
+      padding: 20px;
+      font-family: "Noticia Text", serif;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #303030;
+      font-size: 20px; }
+    .prices-container .price-col .price-col-footer {
+      cursor: pointer; }
+    .prices-container .price-col .woman {
+      background: #995437; }
+    .prices-container .price-col .service-list {
+      padding: 40px 20px;
+      border-left: 1px solid #bfbfbf;
+      border-right: 1px solid #bfbfbf; }
+      .prices-container .price-col .service-list .service {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 14px; }
+        .prices-container .price-col .service-list .service:last-child {
+          margin-bottom: 0; }
+        .prices-container .price-col .service-list .service .service-name, .prices-container .price-col .service-list .service .service-price {
+          font-size: 18px;
+          width: 40%;
+          text-align: left;
+          white-space: nowrap; }
+        .prices-container .price-col .service-list .service .service-price {
+          text-align: right; }

@@ -1,0 +1,39 @@
+/* Footer section */
+footer {
+  background: #212121; }
+  footer .wrapper {
+    padding: 20px 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+.copyright {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700; }
+
+.socials {
+  width: 20%;
+  padding: 0 5px; }
+  .socials a {
+    display: inline-block;
+    padding: 5px;
+    content: '';
+    height: 42px;
+    width: 42px;
+    border: 1px solid #ffffff;
+    vertical-align: middle;
+    margin-right: 5px; }
+
+.g {
+  background: url("../img/g+.png") no-repeat center center; }
+
+.tw {
+  background: url("../img/tw.png") no-repeat center center; }
+
+.insta {
+  background: url("../img/insta.png") no-repeat center center; }
+
+.fb {
+  background: url("../img/fb.png") no-repeat center center; }

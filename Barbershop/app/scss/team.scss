@@ -1,0 +1,62 @@
+/* Team section */
+
+@import "variables.scss";
+.team{
+  padding-bottom: 124px;
+}
+.team-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.teammate{
+  width: 32%;
+  position: relative;
+  transition: .6s ease-out;
+  cursor: pointer;
+  padding-bottom: 10px;
+  &:hover{
+    border-radius: 12px;
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    position: relative;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.45);
+  }
+
+  .team-photo{
+    height: 460px;
+    width: 100%;
+    transition: 1s;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  .barber1{
+    background: url("../img/barber1.jpg") no-repeat -60px -19px;
+  }
+  .barber2{
+    background: url("../img/barber2.jpg") no-repeat -28px -61px;
+  }
+  .barber3{
+    background: url("../img/barber3.jpg") no-repeat -59px 0px ;
+  }
+  .team-header{
+    margin-top: 30px;
+    font-family: $Notica;
+    font-weight: 700;
+  }
+  .rating{
+    width: 100%;
+    padding: 20px;
+  }
+  p{
+    font-size: 18px;
+    padding: 0 30px;
+  }
+}

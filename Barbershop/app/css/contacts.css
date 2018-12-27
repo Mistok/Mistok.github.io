@@ -1,0 +1,100 @@
+/* Contacts section */
+.contacts {
+  background: url("../img/footer_bg.jpg"); }
+  .contacts .contact-col {
+    width: 25%; }
+    .contacts .contact-col:first-child {
+      text-align: left; }
+    .contacts .contact-col:last-child {
+      text-align: right; }
+  .contacts .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10px;
+    color: #ffffff;
+    /* First contact col - SUBSCRIBE*/
+    /* Second contact col  - SCHEDULE*/
+    /* Third contact col - BLOG*/
+    /* Fourth contact col - INSTAGRAM */ }
+    .contacts .wrapper h3 {
+      font-family: "Noticia Text", serif;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #995437;
+      margin-bottom: 60px; }
+    .contacts .wrapper p {
+      color: #ffffff;
+      font-size: 18px; }
+    .contacts .wrapper .subscribe-form {
+      margin-top: 35px;
+      white-space: nowrap; }
+    .contacts .wrapper .subscribe {
+      padding: 20px;
+      border: none;
+      vertical-align: middle; }
+    .contacts .wrapper .subscribe-button {
+      margin-left: -5px;
+      vertical-align: middle;
+      border: none;
+      width: 54px;
+      height: 55px;
+      position: relative;
+      transition: .5s ease;
+      cursor: pointer;
+      background: #995437 url("../img/subscribe.png") no-repeat center center; }
+      .contacts .wrapper .subscribe-button:hover {
+        background-color: #c37959; }
+    .contacts .wrapper .schedule {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 10px; }
+    .contacts .wrapper .schedule-left-col, .contacts .wrapper .schedule-right-col {
+      width: 50%;
+      text-align: left;
+      display: flex;
+      flex-direction: column; }
+      .contacts .wrapper .schedule-left-col span, .contacts .wrapper .schedule-right-col span {
+        font-size: 18px;
+        white-space: nowrap;
+        margin-top: 10px; }
+        .contacts .wrapper .schedule-left-col span:first-child, .contacts .wrapper .schedule-right-col span:first-child {
+          margin-top: 0; }
+    .contacts .wrapper .blog-item {
+      text-align: left;
+      width: 90%; }
+      .contacts .wrapper .blog-item:nth-child(3) {
+        margin-top: 20px; }
+      .contacts .wrapper .blog-item .blog-header {
+        color: #995437;
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 18px; }
+      .contacts .wrapper .blog-item .blog-text {
+        font-size: 14px;
+        line-height: 22px; }
+    .contacts .wrapper .insta-container {
+      padding-left: 20px;
+      max-width: 260px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    .contacts .wrapper .insta-photo {
+      height: 65px;
+      width: 65px;
+      margin: 0 10px 10px; }
+    .contacts .wrapper .insta1 {
+      background: url("../img/insta1.jpg") no-repeat center center; }
+    .contacts .wrapper .insta2 {
+      background: url("../img/insta2.jpg") no-repeat center center; }
+    .contacts .wrapper .insta3 {
+      background: url("../img/insta3.jpg") no-repeat center center; }
+    .contacts .wrapper .insta4 {
+      background: url("../img/insta4.jpg") no-repeat center center; }
+    .contacts .wrapper .insta5 {
+      background: url("../img/insta5.jpg") no-repeat center center; }
+    .contacts .wrapper .insta6 {
+      background: url("../img/insta6.jpg") no-repeat center center; }

@@ -1,0 +1,25 @@
+/* Statistics section */
+.statistics {
+  padding: 0px;
+  background: url("../img/statistics_bg.png") no-repeat -140px -35px; }
+  .statistics .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.statistics-block {
+  padding: 60px 40px;
+  width: 25%; }
+  .statistics-block h1 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #995437;
+    font-family: "Noticia Text", serif;
+    font-weight: 700; }
+  .statistics-block span {
+    display: block;
+    margin-top: 16px;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase; }

@@ -1,0 +1,36 @@
+/* About section */
+.section-text {
+  display: inline-block;
+  max-width: 55%; }
+
+.about-items-container {
+  margin-top: 50px;
+  padding: 60px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.about-item {
+  background: #f0f0f0;
+  border: 1px solid #7f7f7f;
+  max-width: 340px;
+  padding: 80px 10px;
+  position: relative; }
+  .about-item h3 {
+    font-family: "Noticia Text", serif;
+    font-weight: 700;
+    font-size: 20px; }
+  .about-item .section-gutter:before {
+    left: 0;
+    bottom: 12px; }
+  .about-item .section-gutter:after {
+    display: none; }
+
+.about-img {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.about-item-text {
+  font-size: 18px; }

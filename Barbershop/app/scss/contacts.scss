@@ -1,0 +1,131 @@
+/* Contacts section */
+
+@import "variables.scss";
+
+.contacts{
+  background: url("../img/footer_bg.jpg");
+  .contact-col{
+    width: 25%;
+    &:first-child{
+      text-align: left;
+    }
+    &:last-child{
+      text-align: right;
+    }
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10px;
+    color: $white;
+    h3{
+      font-family: $Notica;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $brown;
+      margin-bottom: 60px;
+    }
+    p{
+      color: $white;
+      font-size: 18px;
+    }
+    /* First contact col - SUBSCRIBE*/
+    .subscribe-form{
+      margin-top: 35px;
+      white-space: nowrap;
+    }
+    .subscribe{
+      padding: 20px;
+      border: none;
+      vertical-align: middle;
+    }
+    .subscribe-button{
+      margin-left: -5px;
+      vertical-align: middle;
+      border: none;
+      width: 54px;
+      height: 55px;
+      position: relative;
+      transition: .5s ease;
+      cursor: pointer;
+      background: $brown url("../img/subscribe.png") no-repeat center center;
+      &:hover{
+        background-color: lighten($brown, 15%);
+      }
+    }
+    /* Second contact col  - SCHEDULE*/
+    .schedule{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+    .schedule-left-col,.schedule-right-col{
+      width: 50%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      span{
+        font-size: 18px;
+        white-space: nowrap;
+        margin-top: 10px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+    }
+    /* Third contact col - BLOG*/
+    .blog-item{
+      text-align: left;
+      width: 90%;
+      &:nth-child(3){
+        margin-top: 20px;
+      }
+      .blog-header{
+        color: $brown;
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 18px;
+
+      }
+      .blog-text{
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    /* Fourth contact col - INSTAGRAM */
+    .insta-container{
+      padding-left: 20px;
+      max-width: 260px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .insta-photo{
+      height: 65px;
+      width: 65px;
+      margin: 0 10px 10px;
+    }
+    .insta1{
+       background: url("../img/insta1.jpg") no-repeat center center;
+     }
+    .insta2{
+      background: url("../img/insta2.jpg") no-repeat center center;
+    }
+    .insta3{
+      background: url("../img/insta3.jpg") no-repeat center center;
+    }
+    .insta4{
+      background: url("../img/insta4.jpg") no-repeat center center;
+    }
+    .insta5{
+      background: url("../img/insta5.jpg") no-repeat center center;
+    }
+    .insta6{
+      background: url("../img/insta6.jpg") no-repeat center center;
+    }
+  }
+}

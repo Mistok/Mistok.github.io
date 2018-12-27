@@ -1,0 +1,32 @@
+/* Statistics section */
+
+@import "variables.scss";
+
+.statistics{
+  padding: 0px;
+  background: url("../img/statistics_bg.png") no-repeat -140px -35px ;
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.5 );
+  }
+}
+.statistics-block{
+  padding: 60px 40px;
+  width: 25%;
+   h1{
+     font-size: 60px;
+     line-height: 60px;
+     color: $brown;
+     font-family: $Notica;
+     font-weight: 700;
+  }
+  span{
+    display: block;
+    margin-top: 16px;
+    font-size: 22px;
+    color: $white;
+    text-transform: uppercase;
+  }
+}

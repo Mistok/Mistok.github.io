@@ -1,0 +1,53 @@
+/* Services section */
+.appointment {
+  color: #ffffff;
+  background: url("../img/brush_bg.jpg") no-repeat 0px 0px; }
+
+.appointment-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.app-left-col, .app-right-col {
+  width: 50%; }
+
+.appointment-form {
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 66%;
+  /* Send form button */ }
+  .appointment-form input, .appointment-form select, .appointment-form textarea {
+    display: block;
+    width: 95%;
+    background: transparent;
+    border: none;
+    padding: 7px;
+    color: #7f7f7f;
+    font-size: 16px;
+    border-bottom: 1px solid #7f7f7f;
+    margin-bottom: 45px; }
+  .appointment-form option {
+    background: #995437;
+    padding: 17px;
+    color: #ffffff;
+    font-size: 18px; }
+  .appointment-form textarea {
+    display: inline-block;
+    width: 100%;
+    height: 135px; }
+  .appointment-form #submit, .appointment-form #submit1 {
+    width: auto;
+    border: 1px solid #86746c;
+    background: #995437;
+    padding: 22px;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    transition: .6s ease-out;
+    color: #ffffff;
+    box-shadow: 0px 0px 0px 0px #995437;
+    cursor: pointer; }
+    .appointment-form #submit:hover, .appointment-form #submit1:hover {
+      background: #ac5e3e;
+      box-shadow: 1px 1px 2px 2px #995437;
+      transform: scale(1.04); }

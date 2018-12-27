@@ -1,0 +1,50 @@
+/* Services section */
+.services {
+  padding-bottom: 380px;
+  background: url("../img/man.png") no-repeat center bottom; }
+  .services .wrapper:nth-child(2) {
+    width: auto;
+    padding-top: 180px; }
+
+/* services block grid*/
+.service-left-col, .service-right-col {
+  font-size: 22px;
+  /*display: inline-block;
+  width: 50%;*/
+  width: 33%; }
+
+.service-left-col {
+  float: left; }
+  .service-left-col .service-item {
+    padding-right: 140px;
+    text-align: right; }
+
+.service-right-col {
+  float: right; }
+  .service-right-col .service-item {
+    padding-left: 140px;
+    text-align: left; }
+
+.service-item:nth-child(1) {
+  margin-bottom: 125px; }
+
+.cut {
+  background: url("../img/service1.png") no-repeat 95% center; }
+
+.wash {
+  background: url("../img/service2.png") no-repeat 95% center; }
+
+.styling {
+  background: url("../img/service3.png") no-repeat left center; }
+
+.shave {
+  background: url("../img/service4.png") no-repeat left center; }
+
+.service-header {
+  font-family: "Noticia Text", serif;
+  font-weight: 700; }
+
+.service-text {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 26px; }

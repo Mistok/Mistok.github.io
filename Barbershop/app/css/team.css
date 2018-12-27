@@ -1,0 +1,50 @@
+/* Team section */
+.team {
+  padding-bottom: 124px; }
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.teammate {
+  width: 32%;
+  position: relative;
+  transition: .6s ease-out;
+  cursor: pointer;
+  padding-bottom: 10px; }
+  .teammate:hover {
+    border-radius: 12px;
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    position: relative;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45); }
+  .teammate .team-photo {
+    height: 460px;
+    width: 100%;
+    transition: 1s;
+    -webkit-background-size: 100%;
+    background-size: 100%; }
+  .teammate .barber1 {
+    background: url("../img/barber1.jpg") no-repeat -60px -19px; }
+  .teammate .barber2 {
+    background: url("../img/barber2.jpg") no-repeat -28px -61px; }
+  .teammate .barber3 {
+    background: url("../img/barber3.jpg") no-repeat -59px 0px; }
+  .teammate .team-header {
+    margin-top: 30px;
+    font-family: "Noticia Text", serif;
+    font-weight: 700; }
+  .teammate .rating {
+    width: 100%;
+    padding: 20px; }
+  .teammate p {
+    font-size: 18px;
+    padding: 0 30px; }
