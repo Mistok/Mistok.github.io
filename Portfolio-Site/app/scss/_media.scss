@@ -1,0 +1,100 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  //General
+  body{
+    section{
+      padding: $section-padding-small;
+    }
+  }
+  // Main menu styles
+  header{
+    transition: 1s;
+  }
+  .main-menu{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    flex-direction: column;
+    text-align: center;
+    background: blue;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    transition: 1s;
+    .main-menu__item{
+      border-bottom: 1px solid $grey-light;
+    }
+  }
+  .burger{
+    display: inline-flex;
+    top: 15px;
+  }
+  //Section HI
+  .download{
+    margin-top: 10px;
+  }
+  //Contact section
+  textarea{
+     margin-top: 25px;
+  }
+  //Portfolio section
+  #portfolio{
+    .container{
+      padding: 0;
+      max-width: 95% !important;
+      overflow: hidden;
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  //General
+  body{
+    font-size: 14px;
+    h2{
+      font-size: 16px;
+    }
+  }
+  // Section Hi
+  .img-col{
+    margin-top: 10px;
+    min-height: 250px;
+  }
+  //info section: education
+  .gear-pic {
+    margin-bottom: -40px;
+  }
+  // Portfolio section
+  .slider{
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .slider-item{
+    width: 100%;
+    height: 25vh;
+    &:hover{
+      height: 50vh;
+    }
+    .slider-description{
+      padding: 10px;
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+@import "vars";
+@import "fonts";
+
+#education,#skills{
+  border-bottom: 1px solid $grey;
+  .row{
+    margin-bottom: 5px;
+  }
+  h3{
+    margin-bottom: 0;
+  }
+  p{
+    color: $grey;
+  }
+  span{
+    font-style: italic;
+    font-size: .8em;
+  }
+  .edu-cbs{
+    background: url("../img/cbs.png") center center no-repeat;
+    background-size: contain;
+  }
+  .edu-kpi{
+    background: url("../img/kpi.png") center center no-repeat;
+    background-size: contain;
+  }
+}
+.gear-pic{
+  position: relative;
+  left: 50%;
+  margin-top: 50px;
+  margin-bottom: -80px;
+  //bottom: -200px;
+  transform:  translate3d(-50%, -50%, 0);
+  width: 120px;
+}

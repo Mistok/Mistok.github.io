@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a245441c-15ad-4bde-8f59-69827a47c969" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/normalise.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/everest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/everest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/everest_media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/everest_media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/everest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/everest.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,6 +21,7 @@
     <session id="153166323">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -41,14 +44,14 @@
         <counts>
           <entry key="css" value="710" />
           <entry key="html" value="624" />
-          <entry key="js" value="2246" />
+          <entry key="js" value="2250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="710" />
           <entry key="HTML" value="624" />
-          <entry key="JavaScript" value="2246" />
+          <entry key="JavaScript" value="2250" />
         </counts>
       </usages-collector>
     </session>
@@ -70,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/everest.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1873">
-              <caret line="979" column="19" selection-start-line="979" selection-start-column="19" selection-end-line="979" selection-end-column="19" />
+            <state relative-caret-position="407">
+              <caret line="1093" lean-forward="true" selection-start-line="1093" selection-end-line="1093" />
             </state>
           </provider>
         </entry>
@@ -88,12 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/everest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
-              <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
+            <state relative-caret-position="240">
+              <caret line="12" column="92" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="92" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -119,7 +121,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -127,9 +129,9 @@
         <option value="$PROJECT_DIR$/css/fonts.css" />
         <option value="$PROJECT_DIR$/css/normalise.css" />
         <option value="$PROJECT_DIR$/css/everest_media.css" />
-        <option value="$PROJECT_DIR$/js/everest.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/everest.css" />
+        <option value="$PROJECT_DIR$/js/everest.js" />
       </list>
     </option>
   </component>
@@ -176,7 +178,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Brandi_template" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -202,16 +204,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544182020684</updated>
-      <workItem from="1544182023457" duration="32923000" />
+      <workItem from="1544182023457" duration="33615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32923000" />
+    <option name="totallyTimeSpent" value="33615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1235119" />
@@ -260,17 +261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/everest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="101" column="60" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
-          <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -286,8 +276,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/everest.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1873">
-          <caret line="979" column="19" selection-start-line="979" selection-start-column="19" selection-end-line="979" selection-end-column="19" />
+        <state relative-caret-position="407">
+          <caret line="1093" lean-forward="true" selection-start-line="1093" selection-end-line="1093" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/everest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="92" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="92" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

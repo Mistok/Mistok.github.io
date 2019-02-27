@@ -1,0 +1,165 @@
+@import "vars";
+@import "fonts";
+
+#hi{
+  padding: $section-padding 0 $section-padding 0;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $grey;
+}
+h2{
+  font-size: 26px;
+}
+// Contacts block
+
+.contacts{
+  //left col
+  hr{
+    //border:solid 1px black;
+    width: 96%;
+    color: $grey;
+    height: 1px;
+  }
+  .about-text{
+    color: $grey;
+  }
+  .contact-col{
+    padding: 10px;
+  }
+  .my-hr{
+    color: $grey;
+  }
+  .col-3{
+    color: $black;
+    font-weight: 700;
+  }
+  .col-9{
+    color: $grey;
+    padding-left: 20px;
+  }
+  .social-container{
+    display: flex;
+    justify-content: space-between;
+    .social-link{
+      font-size: 24px;
+      color: $grey;
+    }
+    .fb{
+      &:hover{
+        color: #3b5998;
+      }
+    }
+    .Lin{
+      &:hover{
+        color: #007bb6;
+      }
+    }
+    .Pin{
+      &:hover{
+        color: #d12c5b;
+      }
+    }
+    .Insta{
+      &:hover{
+        color: #de2647;
+      }
+    }
+  }
+}
+.contact-links{
+  justify-content: space-around;
+  button,a{
+    cursor: pointer;
+    border: none;
+    padding: 15px ;
+    color: $white;
+    background-color: $red;
+    border-radius: 2px;
+    font-family: 'laila-bold', sans-serif;
+    transition: .3s;
+    position: relative;
+    text-align: center;
+
+    &:hover{
+      background-color: lighten($red, 5);
+      -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+      box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    }
+  }
+
+}
+.img-block{
+  //right col
+
+  height: 100%;
+  background: #0e0e0e url("../img/bilous_sm.jpg") center -108px no-repeat;
+  margin: 0 15px;
+}
+// Modal window styles
+.my-modal{
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  left: 0;
+  top: 0;
+  perspective: 500px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,.8);
+  transition: 1s ease-in-out;
+  animation-duration: .5s;
+  form{
+    input, textarea{
+      color: $white;
+      font-size: 16px ;
+    }
+    textarea{
+      height: 112px;
+    }
+  }
+
+}
+
+.massage-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.close{
+  font-size: 35px;
+  color: $white;
+  font-weight: 700;
+}
+
+.show-modal{
+  display: flex ;
+  animation: showModal;
+  animation-duration: .9s;
+  transform-origin: top center;
+  @keyframes showModal {
+    from{
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+}
+.hide-modal{
+  animation-name: hideModal;
+  animation-duration: .9s;
+  transform-origin: top center;
+  @keyframes hideModal {
+    from{
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+    to{
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+  }
+}

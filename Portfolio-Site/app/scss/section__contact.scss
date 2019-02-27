@@ -1,0 +1,41 @@
+@import "vars";
+@import "fonts";
+
+.contact-form{
+  //padding: $section-padding;
+  .col-6{
+    margin: 0;
+  }
+  input,textarea{
+    &:first-child{
+      margin-bottom: 15px;
+    }
+    background: transparent;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    color: $black;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    &:hover{
+      border: 1px solid $red;
+    }
+  }
+  textarea{
+    height: 112px ;
+  }
+  input[type="submit"]{
+    background-color: $red;
+    border: none;
+    color: $white;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      background-color:lighten($red,5);
+      -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+      box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    }
+  }
+}
