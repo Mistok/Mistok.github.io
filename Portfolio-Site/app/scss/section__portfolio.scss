@@ -1,6 +1,6 @@
 @import "vars";
 @import "fonts";
-#portfolio{
+.portfolio{
   padding: 0;
   padding-top: $section-padding;
   .container{
@@ -107,3 +107,105 @@
 .item4{
   background: $grey-light url("../img/barber.jpg");
 }
+
+
+// NEW ANIMATION
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  &:hover{
+    .overlay{
+      background-color: rgba(170,170,170,0.4);
+    }
+  }
+  h2, img{
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  img{
+    display: block;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  &:hover{
+    img{
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  h2{
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border-right: 2px solid $grey;
+  }
+  .info{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-weight: normal;
+    max-width: 90%;
+    position: absolute;
+    padding: 15px;
+    text-align: justify;
+    .slide-about{
+      font-size: 12px;
+    }
+    .slide-features{
+      font-size: 10px;
+      font-style: italic;
+      letter-spacing: 1.1px;
+      color: $grey;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+  &:hover{
+    .info{
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      background-color: rgba(0,0,0,0.85);
+    }
+  }
+}
+
