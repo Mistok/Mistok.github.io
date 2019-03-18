@@ -6,8 +6,17 @@ $(function() {
         var x = document.querySelector('.burger-nav');
         x.classList.toggle('burger-nav-active')
     });
+    $(function () {
+        $('.nav-link').bind('click.smoothscroll',function () {
+            var target = $(this).attr('href'),
+                top = $(target).offset().top;
+            $('body, html').animate({scrollTop: top}, 1000);
+            return false
+        })
+    });
+    
     /* MODAL WINDOW */
-
+/*
     var modal = document.querySelector('.my-modal');
     var modalButton = document.querySelector('.contact-me');
     var closeBtn  = document.querySelector('.fa-window-close');
@@ -24,6 +33,7 @@ $(function() {
         }, 800)
     });
     /* Closing modal window by click on clear field*/
+    /*
     window.addEventListener('click',function (e) {
         if(e.target === modal ){
             modal.classList.toggle('hide-modal'); //add hide-animation
@@ -32,7 +42,7 @@ $(function() {
             }, 800)
         }
     });
-
+*/
     //Smooth scroll
     $(function () {
         $('.nav-link').bind('click.smoothscroll',function () {

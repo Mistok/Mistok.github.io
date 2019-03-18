@@ -39,3 +39,13 @@
     }
   }
 }
+#contact{
+  .contact-info{
+    .contacts{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+}
