@@ -1,0 +1,128 @@
+@import "vars";
+
+.content_block{
+  display: flex;
+  height: 90%;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+
+  flex-direction: row;
+}
+
+.content_block_scrollable_container{
+  padding-right: 110px;
+  position: relative;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.content_block_nav{
+  width: 270px;
+  padding: 0 23px 0 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+
+  .nav_link{
+    padding: 28px 10px;
+    width: 175px;
+    margin-bottom: 13px;
+    position: relative;
+
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: $gold;
+    text-transform: uppercase;
+    transition: .3s ease;
+    svg{
+      position: absolute;
+      width: 115%;
+      top: 0 ;
+      left: 0;
+      visibility: hidden;
+    }
+    &:active{
+      background-color: transparent;
+      color: $gold;
+      svg{
+       visibility: visible;
+      }
+    }
+  }
+}
+.content_block_text{
+  padding: 30px;
+  background: #ffffff;
+
+  .content_block_text_title{
+    font-weight: 200;
+    font-size: $font_size_h2;
+    margin-bottom: 20px;
+  }
+  .content_block_text_paragraph{
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+
+/* scrollbar customizing*/
+::-webkit-scrollbar { /* 1 - скроллбар */
+  width: 10px;
+  height: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-button { /* 2 - кнопка */
+}
+::-webkit-scrollbar-track { /* 3 - трек */
+
+}
+::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+
+}
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: $gold;
+}
+::-webkit-scrollbar-corner { /* 6 - уголок */
+
+}
+::-webkit-resizer { /* 7 - изменение размеров */
+  height: 10px;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+  .content_block_scrollable_container{
+    padding-right: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .content_block_scrollable_container{
+    padding-right: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .content_block{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .content_block_scrollable_container{
+    padding-right: 0;
+  }
+  .nav_link {
+    padding: 10px 5px;
+    width: 100px;
+    margin-bottom: 10px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}

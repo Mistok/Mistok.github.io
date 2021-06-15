@@ -1,0 +1,51 @@
+@import "vars";
+@import "fonts";
+
+.top_section{
+  display: flex;
+  flex-direction: row;
+  flex: 90px 1;
+  .binding{
+    min-height: 100%;
+    width: 90px;
+    position: relative;
+    background-color: $binding;
+    .container{
+      margin-top: 70px;
+      transform: rotate(270deg);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: $binding;
+      font-size: $font_size_h3;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: $gold;
+      font-weight: 500;
+      &:before{
+        // two lines after title
+        content: '1';
+        color: transparent;
+
+        position: relative;
+        right: 30%;
+        font-size: 8px;
+        height: 88px;
+        border-right: 6px solid $gold;
+        border-left: 6px solid $gold;
+      }
+      &:after{
+        // single line before title
+        content: '1';
+        font-size: 34px;
+        color: transparent;
+        height: 88px;
+        border-right: 6px solid $gold;
+      }
+      img{
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
