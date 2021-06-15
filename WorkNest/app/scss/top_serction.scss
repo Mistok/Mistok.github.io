@@ -4,34 +4,40 @@
 .top_section{
   display: flex;
   flex-direction: row;
-  flex: 90px 1;
+
   .binding{
     min-height: 100%;
     width: 90px;
     position: relative;
+    padding: 20px;
     background-color: $binding;
+
     .container{
       margin-top: 70px;
       transform: rotate(270deg);
+
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
+
       background-color: $binding;
       font-size: $font_size_h3;
       text-transform: uppercase;
       white-space: nowrap;
       color: $gold;
       font-weight: 500;
+
       &:before{
         // two lines after title
         content: '1';
         color: transparent;
 
         position: relative;
-        right: 30%;
-        font-size: 8px;
+        right: 30vh;
         height: 88px;
+
+        font-size: 8px;
         border-right: 6px solid $gold;
         border-left: 6px solid $gold;
       }
@@ -46,6 +52,42 @@
       img{
         transform: rotate(90deg);
       }
+      span{
+        padding-top: 15px;
+      }
     }
   }
+}
+
+@media (max-width: 768px) {
+  .top_section{
+    .binding {
+      width: 40px;
+      .container{
+        max-height: 40px;
+        font-size: 13px;
+        &:before{
+          // single line after title
+
+          height: 40px;
+          border-right: 3px solid $gold;
+          border-left: 3px solid $gold;
+        }
+        &:after{
+          // single line before title
+          content: '1';
+          font-size: 34px;
+          color: transparent;
+          height: 40px;
+          border-right: 3px solid $gold;
+        }
+        img{
+          max-width: none;
+          height: 25px;
+        }
+      }
+
+    }
+  }
+
 }

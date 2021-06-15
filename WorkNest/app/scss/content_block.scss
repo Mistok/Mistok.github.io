@@ -36,6 +36,7 @@
     background-color: $gold;
     text-transform: uppercase;
     transition: .3s ease;
+
     svg{
       position: absolute;
       width: 115%;
@@ -43,7 +44,7 @@
       left: 0;
       visibility: hidden;
     }
-    &:active{
+    &:hover{
       background-color: transparent;
       color: $gold;
       svg{
@@ -51,7 +52,15 @@
       }
     }
   }
+  .nav_link_active{
+    background-color: transparent;
+    color: $gold;
+    svg{
+      visibility: visible;
+    }
+  }
 }
+
 .content_block_text{
   padding: 30px;
   background: #ffffff;
@@ -112,17 +121,29 @@
   .content_block{
     width: 100%;
     margin-top: 40px;
+    .content_block_nav {
+      width: 270px;
+      padding: 0 5px 0 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+    }
+    .nav_link {
+      padding: 10px 5px;
+      width: 100px;
+      margin-bottom: 10px;
+      font-size: 10px;
+      white-space: nowrap;
+
+      svg {
+        width: 105%;
+        top: -3px ;
+      }
+    }
   }
   .content_block_scrollable_container{
     padding-right: 0;
   }
-  .nav_link {
-    padding: 10px 5px;
-    width: 100px;
-    margin-bottom: 10px;
 
-    svg {
-      width: 100%;
-    }
-  }
 }

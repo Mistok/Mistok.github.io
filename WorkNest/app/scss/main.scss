@@ -9,13 +9,14 @@
   position: relative;
 
   background-color: $main_bg;
-  max-width: 1734px;
+  max-width: 1826px;
   padding: 20px 95px 15px 80px;
 }
 
 // burger menu styles
 .menu_container{
   text-align: right;
+  padding: 5px 0;
 }
 .menu{
   display: inline-block;
@@ -71,8 +72,16 @@
   }
 }
 @media (max-width: 768px) {
-  main{
+  .main_container{
+    padding-top: 50px;
+  }
+  .main{
     max-width: calc(100% - 90);
     flex-direction: column;
+    padding: 20px ;
   }
+  .menu{
+    margin-right: 50px;
+  }
+
 }
