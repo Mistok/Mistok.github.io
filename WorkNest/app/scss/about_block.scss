@@ -5,57 +5,65 @@
   padding-right: 100px;
   display: flex;
   flex-direction: column;
-  h1{
-    font-size: $font_size_h1;
-    margin-bottom: 50px;
-    font-weight: 200;
-  }
-  h3{
-    font-size: $font_size_h3;
-    color: $gold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 200;
-  }
-  p{
-    font-size: $font_size;
-    color: $text;
-    margin-bottom: 170px;
-  }
-  .buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 70px;
-    button{
-      background: $binding;
-      color: #ffffff;
-      font-size: 15px;
-      padding: 20px 50px;
-      border: none;
-      border-radius: 5px;
-      margin-right: 20px;
+
+}
+.about_block_title{
+  font-size: $font_size_h1;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.about_block_subtitle{
+  font-size: $font_size_h3;
+  color: $gold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.about_block_description{
+  font-size: $font_size;
+  color: $text;
+  margin-bottom: 170px;
+}
+.about_block_buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 70px;
+  button{
+    background: $binding;
+    color: $white;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    &:nth-child(2){
+      margin-right: 0;
+      background-image: url(../images/donate_icon_2.png);
+      background-repeat: no-repeat;
+      background-position: 20px  50%;
+      background-size: 20%;
     }
   }
-  .privacy{
-    text-align: center;
-    color: $text;
-    text-decoration: none;
-    font-size: 10px;
-    text-transform: capitalize;
-    border-bottom: 1px solid lighten($text, 55);
-    margin: 0 auto;
-  }
 }
-
+.about_block_privacy{
+  text-align: center;
+  color: $text;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid lighten($text, 55);
+  margin: 0 auto;
+}
 
 @media (max-width: 1400px) {
   .about_block{
     padding-right: 50px;
-    h1{
+    .about_block_title{
       font-size: 60px;
     }
-    p{
+    .about_block_description{
       margin-bottom: 100px;
     }
   }
@@ -66,24 +74,38 @@
 @media (max-width: 992px) {
   .about_block{
     padding-right: 30px;
-    h1{
+    width: auto;
+    .about_block_title{
       font-size: 45px;
     }
-    p{
+    .about_block_description{
       margin-bottom: 70px;
     }
   }
 }
 @media (max-width: 768px) {
   .about_block {
-    width: 100%;
+    padding-right: 0;
     font-size: 13px;
-    h1{
+    .about_block_title{
       text-align: center;
       margin-bottom: 30px;
     }
-    .buttons{
-      margin-bottom: 70px;
+    .about_block_description{
+      font-size: 13px;
+      text-align: justify;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .about_block_buttons{
+    margin-bottom: 50px;
+    button{
+      padding: 10px 5px;
+      &:nth-child(2){
+        padding-left: 25px !important;
+        background-position: 5px  50%;
+      }
     }
   }
 }

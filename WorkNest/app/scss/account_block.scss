@@ -1,0 +1,202 @@
+@import "vars";
+
+.account_info_container{
+  display: flex;
+  flex-direction: row;
+}
+.account_info{
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.account_info_name{
+  position: relative;
+  white-space: nowrap;
+
+  font-size: 60px;
+  line-height: 80px;
+
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.account_info_data{
+  white-space: nowrap;
+}
+.account_info_img{
+  max-width: none;
+  height: 67px;
+  width: 64px;
+}
+.account_info_edit_btn{
+  height: 38px;
+  width: 38px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $gold;
+  background-image: url("../images/EditBTN.svg");
+}
+.account_info_location, .account_info_data{
+  margin-bottom: 10px;
+  font-size: $font_size;
+}
+.account_info_sign_out_btn{
+  border: 0;
+  background-color: transparent;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+// status block
+
+.account_status_title{
+  font-size: 28px;
+  color: $gold;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.account_status_container{
+  display: flex;
+  position: relative;
+  margin-bottom: 45px;
+}
+.account_status_name_container{
+  display: flex;
+  align-self: center;
+}
+.account_status_name{
+  display: flex;
+  margin-right: 40px;
+}
+.account_status_name_img{
+  max-width: none;
+  height: 351px;
+  min-width: 135px;
+}
+
+.account_status_name_vertical{
+  // vertical block with the status name
+  font-size: 62px;
+  font-weight: 100;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.account_status_statistic_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Right side largest numbers
+.account_status_statistic_number{
+  font-size: 250px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.account_status_statistic_number_description{
+  font-size: 38px;
+  white-space: nowrap;
+}
+
+// account advanced features
+
+.account_advanced_features{
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  label{
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+.account_advanced_features_description{
+  display: block;
+  font-size: 10px;
+  font-family: "Roboto Thin", sans-serif;
+  font-weight: 100;
+}
+@media (max-width:1200px) {
+  .account_info{
+    margin-bottom: 40px;
+  }
+  .account_info_name{
+    margin-bottom: 40px;
+  }
+  .account_status_name{
+    margin-right: 30px;
+  }
+  .account_status_name_img{
+    height: 250px;
+    min-width: 0;
+  }
+  .account_status_name_vertical{
+    font-size: 40px;
+  }
+  .account_status_statistic_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .account_status_statistic_number{
+    font-size: 170px;
+  }
+  .account_status_statistic_number_description{
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .account_info{
+    margin-bottom: 20px;
+  }
+  .account_status_name{
+    margin-right: 20px;
+  }
+  .account_status_name_img{
+    height: 200px;
+    min-width: 0;
+  }
+  .account_status_name_vertical{
+    font-size: 30px;
+  }
+  .account_status_statistic_container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .account_status_statistic_number{
+    font-size: 80px;
+  }
+  .account_status_statistic_number_description{
+    font-size: 22px;
+  }
+
+}
+@media (max-width: 768px) {
+  .account_info_name{
+    margin-bottom: 30px;
+  }
+  .account_status_name{
+    margin-right: 10px;
+  }
+  .account_status_name{
+    margin-right: 30px;
+  }
+  .account_status_name_img{
+    height: 250px;
+    min-width: 0;
+  }
+  .account_status_name_vertical{
+    font-size: 40px;
+  }
+  .account_status_statistic_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .account_status_statistic_number{
+    font-size: 170px;
+  }
+  .account_status_statistic_number_description{
+    font-size: 30px;
+  }
+}

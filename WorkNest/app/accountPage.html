@@ -7,9 +7,11 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500&display=swap" rel="stylesheet">
-</head>
 
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+</style>
 <body>
   <div class="wrapper">
       <section class="top_section">
@@ -28,72 +30,72 @@
             </div>
           </div>
           <main class="main">
-            <article id="about_block" class="about_block">
-              <h1 id="about_block_title">Appreciation</h1>
-              <h3>Lots of people`s voices</h3>
-              <p>
-                Because this is the People`s Talmud we have a lot of wonderful people who
-                have volunteered as editors and proof readers. This means that many entries on
-                Result Pages will have different styles. Sometimes even different spellings like Shabbat or Shabbos.
-                We`re cool with that. In fact it remind us of the joke you might enjoy. A mother buys her son for his
-                birthday two ties, one red and one blue. To please his mom, the son run upstairs and puts on the blue
-                tie to show her nice it looks. When he comes down she only complains, "What the matter? You didn`t
-                like the red tie?" So, you choice - Shabbat or Shabbos.
-              </p>
-              <div class="buttons">
-                <button>Contact Us</button>
-                <button>Donate</button>
+            <div id="about_block_title" class="about_block">
+              <div class="account_info_container">
+                <div class="account_info_img_container">
+                  <img class="account_info_img" src="./images/account_photo.png" alt="account_img">
+                </div>
+                <div class="account_info">
+                  <h4 class="account_info_name">
+                    Gedaliah
+                    <button class="account_info_edit_btn"></button>
+                  </h4>
+                  <p class="account_info_location">Jerusalem, Israel</p>
+                  <p class="account_info_data">Become a member on October 2020</p>
+                  <button class="account_info_sign_out_btn">Sign out</button>
+                </div>
               </div>
-              <a id="about_block_privacy" href="#" class="privacy">Privacy Policy</a>
-            </article>
+              <h3 class="account_status_title">Your status:</h3>
+              <div class="account_status_container">
+                <div class="account_status_name">
+                  <div class="account_status_name_container">
+                    <span class="account_status_name_vertical">Conscious</span>
+                  </div>
+                  <img class="account_status_name_img" src="./images/status_img.jpg" alt="status_img">
+                </div>
+                <div class="account_status_statistic_container">
+                  <span class="account_status_statistic_number">47</span>
+                  <span class="account_status_statistic_number_description">Searches to date</span>
+                </div>
+              </div>
+              <div class="account_advanced_features">
+                <input id="show_advanced_features" type="checkbox">
+                <div>
+                  <label for="show_advanced_features">Show advanced content</label>
+                  <span class="account_advanced_features_description">Recommended only for people with background in Talmud study</span>
+                </div>
+              </div>
+              <a id="about_block_privacy" href="#" class="privacy" style="font-size: 0;">Privacy Policy</a>
+            </div>
             <div class="content_block">
               <nav class="content_block_nav">
-                <a class="nav_link" href="#">
-                  Feedback
+                <a class="nav_link nav_link_active" href="#">
+                  My Saves
                   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
                 </a>
                 <a class="nav_link" href="#">
-                  Endorsements
-                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
-                </a>
-                <a class="nav_link" href="#">
-                  News & Events
-                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
-                </a>
-                <a class="nav_link" href="#">
-                  About
+                  My Notes
                   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
                 </a>
               </nav>
               <div id="content_block_scrollable" class="content_block_scrollable_container">
-                <div class="content_block_text">
-                  <h2 class="content_block_text_title">About Us</h2>
-                  <p class="content_block_text_paragraph">
-                    We are a small team of people committed to enabled everyone to benefit from the timeless
-                  </p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
-                  <p class="content_block_text_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cum cumque dignissimos dolores earum eius explicabo harum illo impedit minima modi, nisi odit quod, sit sunt tempora veniam voluptatibus!</p>
+                <div class="book_item">
+                  <span class="item_marker item_marker_blue">Hullin 133a</span>
+                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                </div>
+                <div class="book_item">
+                  <span class="item_marker item_marker_violet">Berachot 7b</span>
+                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                </div>
+                <div class="book_item">
+                  <span class="item_marker item_marker_violet">Hullin 133a</span>
+                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                </div>
+                <div class="book_item">
+                  <span class="item_marker item_marker_violet">Berachot 7b</span>
+                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
                 </div>
               </div>
-
             </div>
           </main>
         </div>

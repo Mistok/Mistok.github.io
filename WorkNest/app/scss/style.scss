@@ -10,8 +10,17 @@
 @import "about_block";
 @import "content_block";
 
-
 // feedback page
+
 @import "feedback_block";
 
+// account page
 
+@import "account_block";
+
+// common object
+
+@import "item_marker";
+@import "book_block";
+@import "side_nav";
+@import "burger_menu";

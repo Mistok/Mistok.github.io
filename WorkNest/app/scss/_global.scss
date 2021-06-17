@@ -11,9 +11,10 @@ body {
 	min-height: 100%;
 	font-family: 'Roboto', sans-serif;
 	background-color: $main_bg;
-
 }
-
+h1, h2, h3{
+	font-family: "Roboto", sans-serif;
+}
 .main {
 	flex: 1 0 auto;
 }

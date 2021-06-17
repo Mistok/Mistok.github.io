@@ -1,0 +1,45 @@
+@import "vars";
+
+
+.item_marker{
+  // item should have position: relative
+  position: absolute;
+  right: -15px;
+  top: 40px;
+
+  padding: 10px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $text_white;
+
+  &:after{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 4px;
+    height: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-right: 15px solid $main_bg;
+  }
+}
+
+.item_marker_blue{
+  background-color: $marker_blue !important;
+}
+.item_marker_violet{
+  background-color: $marker_violet;
+}
+.item_title{
+  font-size: $font_size_h2;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .item_marker{
+    top: 20px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+}

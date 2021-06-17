@@ -15,55 +15,15 @@
   position: relative;
   z-index: 1;
   overflow-y: scroll;
+
+  transition: .3s ease;
 }
-.content_block_nav{
-  width: 270px;
-  padding: 0 23px 0 8px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 10;
 
-  .nav_link{
-    padding: 28px 10px;
-    width: 175px;
-    margin-bottom: 13px;
-    position: relative;
-
-    text-align: center;
-    border-radius: 5px;
-    color: #ffffff;
-    background-color: $gold;
-    text-transform: uppercase;
-    transition: .3s ease;
-
-    svg{
-      position: absolute;
-      width: 115%;
-      top: 0 ;
-      left: 0;
-      visibility: hidden;
-    }
-    &:hover{
-      background-color: transparent;
-      color: $gold;
-      svg{
-       visibility: visible;
-      }
-    }
-  }
-  .nav_link_active{
-    background-color: transparent;
-    color: $gold;
-    svg{
-      visibility: visible;
-    }
-  }
-}
+// text block styles
 
 .content_block_text{
   padding: 30px;
-  background: #ffffff;
+  background: $white;
 
   .content_block_text_title{
     font-weight: 200;
@@ -87,8 +47,14 @@
 ::-webkit-scrollbar-track { /* 3 - трек */
 
 }
-::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 
+}
+::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+  padding-left: 5px;
+  width: 15px;
+  border-left: 1px solid $gold;
 }
 ::-webkit-scrollbar-thumb { /* 5 - ползунок */
   border-radius: 5px;
@@ -102,15 +68,18 @@
 ::-webkit-resizer { /* 7 - изменение размеров */
   height: 10px;
 }
+html{
+  scrollbar-darkshadow-color: #32CD32
+}
 
 
 @media (max-width: 1400px) {
-
-}
-@media (max-width: 1200px) {
   .content_block_scrollable_container{
     padding-right: 50px;
   }
+}
+@media (max-width: 1200px) {
+
 }
 @media (max-width: 992px) {
   .content_block_scrollable_container{
@@ -119,31 +88,10 @@
 }
 @media (max-width: 768px) {
   .content_block{
-    width: 100%;
+    width: auto;
     margin-top: 40px;
-    .content_block_nav {
-      width: 270px;
-      padding: 0 5px 0 0;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      z-index: 10;
-    }
-    .nav_link {
-      padding: 10px 5px;
-      width: 100px;
-      margin-bottom: 10px;
-      font-size: 10px;
-      white-space: nowrap;
-
-      svg {
-        width: 105%;
-        top: -3px ;
-      }
-    }
   }
   .content_block_scrollable_container{
     padding-right: 0;
   }
-
 }

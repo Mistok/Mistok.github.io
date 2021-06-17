@@ -3,47 +3,20 @@
 .feedback_item{
   position: relative;
 
-
   padding: 30px;
-  background-color: #ffffff;
+  background-color: $white;
   margin-bottom: 15px;
 }
-.feedback_item_marker{
-  position: absolute;
-  right: -15px;
-  top: 40px;
-  padding: 10px 30px;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: red;
-  &:after{
-    content: '';
-    position: absolute;
-    right: -1px;
-    top: 4px;
-    height: 0;
-    width: 0;
-    border: 15px solid transparent;
-    border-right: 15px solid $main_bg;
-  }
-}
-
-.feedback_item_marker_blue{
-  background-color: $marker_blue !important;
-}
-.feedback_item_marker_violet{
-  background-color: $marker_violet;
-}
 .feedback_item_title{
-  font-size: $font_size_h2;
+  margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 100;
 }
 .feedback_item_photo{
   max-width: 100%;
   margin-bottom: 25px;
 }
-
 .feedback_item_text{
   font-size: 13px;
 }
