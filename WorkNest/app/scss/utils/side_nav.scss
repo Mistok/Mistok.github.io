@@ -1,4 +1,4 @@
-@import "vars";
+@import "../common/vars";
 //side navigation menu
 .content_block_nav{
   max-width: 270px;
@@ -10,7 +10,7 @@
 
   .nav_link{
     padding: 28px 10px;
-    width: 175px;
+    //width: 175px;
     margin-bottom: 13px;
     position: relative;
 
@@ -24,7 +24,7 @@
     svg{
       position: absolute;
       width: 115%;
-      top: 0 ;
+      top: 6px ;
       left: 0;
       visibility: hidden;
     }
@@ -58,7 +58,7 @@
 
       svg {
         width: 105%;
-        top: 0 ;
+        top: -4px;
       }
     }
   }
@@ -77,10 +77,6 @@
     }
     .nav_link {
       font-size: 10px;
-      svg {
-        width: 105%;
-        top: 1px ;
-      }
     }
   }
 }

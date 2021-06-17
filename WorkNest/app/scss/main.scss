@@ -1,4 +1,4 @@
-@import "vars";
+@import "common/vars";
 
 .main_container{
   padding-top: 70px;
@@ -10,7 +10,6 @@
 .main{
   position: relative;
   background-color: $main_bg;
-  max-width: 1826px;
   padding: 20px 95px 15px 80px;
   display: flex;
 }
@@ -25,6 +24,7 @@
 @media (max-width: 1200px) {
   main{
     max-width: 970px;
+    padding: 20px;
   }
 }
 @media (max-width: 992px) {
@@ -37,7 +37,6 @@
     padding-top: 50px;
   }
   .main{
-    max-width: calc(100% - 90);
     flex-direction: column;
     padding: 20px ;
   }

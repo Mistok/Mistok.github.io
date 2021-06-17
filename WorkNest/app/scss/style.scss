@@ -1,8 +1,8 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import 'common/vars';
+@import 'common/fonts';
+@import 'common/reset';
+@import 'common/libs';
+@import 'common/global';
 
 // main frame
 @import "top_serction";
@@ -20,7 +20,7 @@
 
 // common object
 
-@import "item_marker";
-@import "book_block";
-@import "side_nav";
-@import "burger_menu";
+@import "utils/item_marker";
+@import "utils/book_block";
+@import "utils/side_nav";
+@import "utils/burger_menu";
