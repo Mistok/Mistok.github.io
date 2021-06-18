@@ -6,14 +6,12 @@
   display: flex;
   flex-direction: column;
 }
-
 .main{
   position: relative;
   background-color: $main_bg;
   padding: 20px 95px 15px 80px;
   display: flex;
 }
-
 
 @media (max-width: 1400px) {
   .main{
@@ -36,14 +34,11 @@
   .main_container{
     padding-top: 50px;
   }
-  .main{
 
-  }
   .menu{
     margin-right: 50px;
     .bar{
       width: 40px;
     }
   }
-
 }

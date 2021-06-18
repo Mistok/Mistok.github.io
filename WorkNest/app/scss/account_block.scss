@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: row;
 }
+.account_block_container{
+  display: flex;
+  flex-direction: column;
+}
 .account_info{
   padding-left: 15px;
   position: relative;
@@ -49,14 +53,16 @@
 }
 
 // status block
-
+.account_status_right, .account_status_left{
+  display: flex;
+}
 .account_status_title{
   font-size: 28px;
   color: $gold;
   margin-bottom: 25px;
   text-transform: capitalize;
 }
-.account_status_container{
+.account_status_divider{
   display: flex;
   position: relative;
   margin-bottom: 45px;
@@ -89,7 +95,6 @@
 }
 
 .account_status_statistic_number{
-
   // right side largest numbers
   font-size: 250px;
   font-family: Roboto, sans-serif;
@@ -124,7 +129,11 @@
     margin-bottom: 40px;
   }
   .account_info_name{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .account_info_location, .account_info_data{
+    font-size: 18px;
   }
   .account_status_name{
     margin-right: 30px;
@@ -148,6 +157,10 @@
   }
 }
 @media (max-width: 992px) {
+  .account_block_container{
+    display: flex;
+    flex-direction: row;
+  }
   .account_info{
     margin-bottom: 20px;
   }
@@ -184,21 +197,10 @@
   .account_status_name{
     margin-right: 30px;
   }
-  .account_status_name_img{
-    height: 250px;
-    min-width: 0;
-  }
-  .account_status_name_vertical{
-    font-size: 40px;
-  }
+
   .account_status_statistic_container{
     display: flex;
     flex-direction: column;
   }
-  .account_status_statistic_number{
-    font-size: 170px;
-  }
-  .account_status_statistic_number_description{
-    font-size: 30px;
-  }
+
 }
