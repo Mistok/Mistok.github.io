@@ -1,42 +1,37 @@
 @import "../common/vars";
+
 //side navigation menu
 .content_block_nav{
-  max-width: 270px;
-  padding: 0 23px 0 8px;
+  padding: 0 20px 0 8px;
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 10;
 
-  .nav_link{
-    padding: 28px 10px;
-    //width: 175px;
-    margin-bottom: 13px;
-    position: relative;
+}
 
-    text-align: center;
-    border-radius: 5px;
-    color: $text_white;
-    background-color: $gold;
-    text-transform: uppercase;
-    transition: .3s ease;
+.nav_link{
+  padding: 25px 10px;
+  margin-bottom: 13px;
+  position: relative;
 
-    svg{
-      position: absolute;
-      width: 115%;
-      top: 6px ;
-      left: 0;
-      visibility: hidden;
-    }
-    &:hover{
-      background-color: transparent;
-      color: $gold;
-      svg{
-        visibility: visible;
-      }
-    }
+  text-align: center;
+  border-radius: 5px;
+  background-color: $gold;
+  color: $text_white;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: .3s ease;
+
+  svg{
+    position: absolute;
+    width: 115%;
+    //height: 100%;
+    top: 3px ;
+    left: 0;
+    visibility: hidden;
   }
-  .nav_link_active{
+  &:hover{
     background-color: transparent;
     color: $gold;
     svg{
@@ -44,15 +39,20 @@
     }
   }
 }
-@media (max-width: 1200px) {
+.nav_link_active{
+  background-color: transparent;
+  color: $gold;
+  svg{
+    visibility: visible;
+  }
+}
 
+@media (max-width: 1200px) {
   .content_block_nav {
-    width: 120px;
     padding: 0 5px 0 0;
     .nav_link {
       padding: 10px;
       width: auto;
-      max-width: 120px;;
       font-size: 12px;
       white-space: nowrap;
 
@@ -63,12 +63,8 @@
     }
   }
 }
-
 @media (max-width: 768px) {
-  .content_block{
-    margin-top: 40px;
     .content_block_nav {
-      width: auto;
       padding: 0 5px 0 0;
       display: flex;
       flex-direction: column;
@@ -77,6 +73,11 @@
     }
     .nav_link {
       font-size: 10px;
+      svg {
+        position: absolute;
+        width: 115%;
+        height: auto;
+      }
     }
-  }
+
 }

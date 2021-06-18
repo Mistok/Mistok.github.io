@@ -34,12 +34,28 @@
   font-size: $font_size_h2;
   margin-bottom: 30px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .item_marker{
     top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .item_marker {
     padding: 5px 10px;
     white-space: nowrap;
     font-size: 12px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -3px;
+      top: 2px;
+      height: 0;
+      width: 0;
+      border: 10px solid transparent;
+      border-right: 10px solid $main_bg;
+    }
   }
 }

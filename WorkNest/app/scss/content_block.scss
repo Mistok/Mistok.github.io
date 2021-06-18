@@ -82,16 +82,20 @@ html{
 
 }
 @media (max-width: 992px) {
+  .content_block{
+    width: auto;
+    margin-top: 40px;
+  }
   .content_block_scrollable_container{
     padding-right: 30px;
   }
 }
 @media (max-width: 768px) {
   .content_block{
-    width: auto;
-    margin-top: 40px;
+
+
   }
   .content_block_scrollable_container{
-    padding-right: 0;
+
   }
 }

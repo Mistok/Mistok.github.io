@@ -16,20 +16,20 @@
 
 
 @media (max-width: 1400px) {
-  main{
-    max-width: 1200px;
+  .main{
     margin: 0 auto;
+    padding: 40px;
   }
 }
 @media (max-width: 1200px) {
-  main{
-    max-width: 970px;
-    padding: 20px;
+  .main{
+    padding: 30px;
   }
 }
 @media (max-width: 992px) {
-  main{
-    max-width: 750px;
+  .main{
+    padding: 20px;
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -37,8 +37,7 @@
     padding-top: 50px;
   }
   .main{
-    flex-direction: column;
-    padding: 20px ;
+
   }
   .menu{
     margin-right: 50px;
