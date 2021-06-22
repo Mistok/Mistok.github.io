@@ -5,12 +5,15 @@
   background-color: $main_bg;
   display: flex;
   flex-direction: column;
+  max-width: 1950px;
+  margin: 0 auto;
 }
 .main{
   position: relative;
   background-color: $main_bg;
   padding: 20px 95px 15px 80px;
   display: flex;
+  height: 100%;
 }
 
 @media (max-width: 1400px) {
@@ -28,6 +31,7 @@
   .main{
     padding: 20px;
     flex-direction: column;
+    height: auto;
   }
 }
 @media (max-width: 768px) {

@@ -12,5 +12,5 @@ $(function () {
 			secondColl.style.maxHeight = 200 + 'vh' ;
 		}
 	}
-	equalHeight()
+	// equalHeight()
 })

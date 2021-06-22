@@ -85,17 +85,13 @@ html{
   .content_block{
     width: auto;
     margin-top: 40px;
+
   }
   .content_block_scrollable_container{
     padding-right: 30px;
+    overflow: auto;
   }
 }
 @media (max-width: 768px) {
-  .content_block{
 
-
-  }
-  .content_block_scrollable_container{
-
-  }
 }

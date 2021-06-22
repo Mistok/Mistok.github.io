@@ -41,14 +41,14 @@
 .bar:nth-of-type(2) {
   animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
 }
-
-@media (max-width: 768px) {
-
+@media (max-width: 1400px) {
   .menu{
     margin-right: 10px;
     .bar{
       width: 40px;
     }
   }
+}
+@media (max-width: 768px) {
 
 }
