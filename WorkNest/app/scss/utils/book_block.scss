@@ -11,10 +11,15 @@
   .book_item{
     padding: 80px 30px;
   }
-
 }
 @media (max-width: 768px) {
   .book_item{
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 425px) {
+  .book_item{
     padding: 50px 20px;
+
   }
 }

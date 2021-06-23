@@ -13,7 +13,7 @@
   padding: 25px 10px;
   margin-bottom: 13px;
   position: relative;
-  min-width: 150px;
+  width: 150px;
   text-align: center;
   border-radius: 5px;
   background-color: $gold;
@@ -48,16 +48,18 @@
 
 @media (max-width: 768px) {
     .content_block_nav {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      z-index: 10;
+      padding: 0 10px 0 0;
     }
     .nav_link {
+      width: 90px;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+      font-size: 10px;
       svg {
         position: absolute;
         width: 115%;
         height: auto;
+        top: 0;
       }
     }
 }

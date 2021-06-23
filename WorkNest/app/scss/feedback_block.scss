@@ -26,16 +26,11 @@
     font-size: 30px;
     margin-bottom: 15px;
   }
-  .feedback_item_marker{
-    top: 30px;
-    padding: 10px 20px;
-    font-size: 13px;
-  }
+
 }
 @media (max-width: 768px) {
 
-  .feedback_item_marker{
-    top: 25px;
-    right: 0;
+  .feedback_item{
+    padding:  15px;
   }
 }

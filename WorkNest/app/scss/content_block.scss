@@ -48,7 +48,7 @@
 
 }
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  //background-color: darkgrey;
 
 }
 ::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
@@ -89,9 +89,20 @@ html{
   }
   .content_block_scrollable_container{
     padding-right: 30px;
-    overflow: auto;
+    overflow: initial;
   }
 }
 @media (max-width: 768px) {
+  .content_block_scrollable_container {
+    padding-right: 10px;
+  }
+  .content_block_text{
+    padding: 15px;
+  }
+}
 
+@media (max-width: 425px) {
+  .content_block_text{
+    padding: 10px;
+  }
 }

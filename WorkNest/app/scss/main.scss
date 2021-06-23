@@ -17,16 +17,14 @@
 }
 
 @media (max-width: 1400px) {
-  .main{
-    margin: 0 auto;
-    padding: 40px;
+  .main_container{
+    padding-top: 20px;
   }
-}
-@media (max-width: 1200px) {
   .main{
     padding: 30px;
   }
 }
+
 @media (max-width: 992px) {
   .main{
     padding: 20px;
@@ -35,12 +33,10 @@
   }
 }
 @media (max-width: 768px) {
-  .main_container{
-    padding-top: 50px;
-  }
 
   .menu{
     margin-right: 50px;
+    padding: 10px;
     .bar{
       width: 40px;
     }

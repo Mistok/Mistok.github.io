@@ -35,10 +35,15 @@
   height: 38px;
   width: 38px;
 
+  cursor: pointer;
   border: none;
   border-radius: 50%;
   background-color: $gold;
   background-image: url("../images/EditBTN.svg");
+  transition: .3s ease;
+  &:hover{
+    box-shadow: 0px 0px 4px 1px $binding;
+  }
 }
 .account_info_location, .account_info_data{
   margin-bottom: 10px;
@@ -155,8 +160,8 @@
   }
 }
 @media (max-width:1200px) {
-  .account_info{
-    margin-bottom: 20px;
+  .account_info,.account_info_name{
+    margin-bottom: 10px;
   }
   .account_info_location, .account_info_data{
     font-size: 15px;
@@ -186,10 +191,7 @@
 @media (max-width: 992px) {
   .account_block_container{
     flex-direction: row;
-    justify-content: space-between;
-  }
-  .account_info{
-    margin-bottom: 20px;
+    justify-content: space-around;
   }
   .account_status_name{
     margin-right: 20px;
@@ -218,7 +220,10 @@
     flex-direction: column;
   }
   .account_info_name{
-    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .account_block_container{
     align-items: center;
@@ -226,8 +231,9 @@
   .account_info_location, .account_info_data{
     word-wrap: break-spaces;
   }
-  .account_status_name{
-    margin-right: 10px;
+  .account_status_title{
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .account_status_name{
     margin-right: 30px;
@@ -235,5 +241,11 @@
   .account_status_statistic_container{
     display: flex;
     flex-direction: column;
+  }
+  .account_status_statistic_number{
+    font-size: 50px;
+  }
+  .account_status_statistic_number_description{
+    font-size: 15px;
   }
 }
