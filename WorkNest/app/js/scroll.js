@@ -1,19 +1,3 @@
-// $(function () {
-// 	let equalHeight = () => {
-// 		if(document.documentElement.clientWidth > 780){
-// 			let heightStart = document.getElementById('about_block_title').getBoundingClientRect().top;
-// 			let heightEnd = document.getElementById('about_block_privacy').getBoundingClientRect().bottom;
-//
-// 			let newHeight = heightEnd - heightStart
-// 			let secondColl = document.getElementById('content_block_scrollable');
-// 			secondColl.style.maxHeight = newHeight + 'px' ;
-// 		} else {
-// 			let secondColl = document.getElementById('content_block_scrollable');
-// 			secondColl.style.maxHeight = 200 + 'vh' ;
-// 		}
-// 	}
-// 	// equalHeight()
-// })
 // (function () {
 // 	/*
 // 		var $log = $('<div style="position:fixed;top:0;left:0;padding:2px;background-color:white">').appendTo(document.body);
@@ -49,7 +33,6 @@
 //
 // 		log("screen size: " + window.innerWidth + "x" + window.innerHeight);
 // 	*/
-// 	console.log('ss')
 // 	let app  = { isMobile: false, useNativeScroll: false }
 // 	var rePixels = /^(\d+)px$/,
 // 		rePercent = /^(\d+(\.\d+))?%$/;

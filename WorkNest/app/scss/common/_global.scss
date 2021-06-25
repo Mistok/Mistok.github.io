@@ -1,5 +1,6 @@
 @import "fonts";
 @import "vars";
+
 html,
 body {
 	height: 100%;
@@ -14,6 +15,7 @@ body {
 }
 h1, h2, h3{
 	font-family: "Roboto", sans-serif;
+	font-weight: 100;
 }
 .main {
 	flex: 1 0 auto;

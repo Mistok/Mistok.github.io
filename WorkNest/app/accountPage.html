@@ -7,6 +7,7 @@
   <title>Peoples Talmud</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_16x16.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_16x16.svg">
 </head>
 <style>
@@ -18,7 +19,11 @@
         <div class="binding">
           <div class="container">
             <img src="./images/logo.png" alt="logo">
-            <span>the peoples talmud</span>
+            <span class="binding_text">the people`s talmud</span>
+          </div>
+          <div class="binding_bottom">
+            <span class="binding_bottom_line"></span>
+            <span class="binding_bottom_line"></span>
           </div>
         </div>
         <div class="main_container">
@@ -29,87 +34,100 @@
               <div class="bar"> </div>
             </div>
           </div>
-          <main class="main">
-            <div id="about_block_title" class="about_block account_block">
-              <div class="account_block_container">
-                <div class="account_info_container">
-                  <div class="account_info_img_container">
-                    <img class="account_info_img" src="./images/account_photo.png" alt="account_img">
-                  </div>
-                  <div class="account_info">
-                    <h4 class="account_info_name">
-                      Gedaliah
-                      <button class="account_info_edit_btn"></button>
-                    </h4>
-                    <p class="account_info_location">Jerusalem, Israel</p>
-                    <p class="account_info_data">Become a member on October 2020</p>
-                    <button class="account_info_sign_out_btn">Sign out</button>
-                  </div>
-                </div>
-                <div class="account_status_container">
-                  <h3 class="account_status_title">Your status:</h3>
-                  <div class="account_status_divider">
-                    <div class="account_status_left">
-                      <div class="account_status_name">
-                        <div class="account_status_name_container">
-                          <span class="account_status_name_vertical">Conscious</span>
+          <main class="main scroll_container">
+            <div class="layout_left_col account_block">
+              <div class="scrollable" >
+                <div class="account_block_container">
+                  <div>
+                    <div class="account_info_container">
+                      <div class="account_info_img_container">
+                        <img class="account_info_img" src="./images/account_photo.png" alt="account_img">
+                      </div>
+                      <div class="account_info">
+                        <h4 class="account_info_name">
+                          Gedaliah
+                          <button class="account_info_edit_btn"></button>
+                        </h4>
+                        <p class="account_info_location">Jerusalem, Israel</p>
+                        <p class="account_info_data">Become a member on October 2020</p>
+                        <button class="account_info_sign_out_btn">Sign out</button>
+                      </div>
+                    </div>
+                    <div class="account_status_container">
+                      <h3 class="account_status_title">Your status:</h3>
+                      <div class="account_status_divider">
+                        <div class="account_status_left">
+                          <div class="account_status_name">
+                            <div class="account_status_name_container">
+                              <span class="account_status_name_vertical">Conscious</span>
+                            </div>
+                            <img class="account_status_name_img" src="./images/status_img.jpg" alt="status_img">
+                          </div>
                         </div>
-                        <img class="account_status_name_img" src="./images/status_img.jpg" alt="status_img">
+                        <div class="account_status_right">
+                          <div class="account_status_statistic_container">
+                            <span class="account_status_statistic_number">47</span>
+                            <span class="account_status_statistic_number_description">Searches to date</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="account_status_right">
-                      <div class="account_status_statistic_container">
-                        <span class="account_status_statistic_number">47</span>
-                        <span class="account_status_statistic_number_description">Searches to date</span>
-                      </div>
-                    </div>
+                  </div>
+
+                </div>
+                <div class="account_advanced_features">
+                  <input id="show_advanced_features" type="checkbox">
+                  <div>
+                    <label for="show_advanced_features">Show advanced content</label>
+                    <span class="account_advanced_features_description">Recommended only for people with background in Talmud study</span>
                   </div>
                 </div>
               </div>
-              <div class="account_advanced_features">
-                <input id="show_advanced_features" type="checkbox">
-                <div>
-                  <label for="show_advanced_features">Show advanced content</label>
-                  <span class="account_advanced_features_description">Recommended only for people with background in Talmud study</span>
-                </div>
+              <div class="scroll-track">
+                <div class="scroll-handle"></div>
               </div>
             </div>
-            <div class="content_block">
-              <nav class="content_block_nav">
-                <a class="nav_link nav_link_active" href="#">
-                  My Saves
-                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
-                </a>
-                <a class="nav_link" href="#">
-                  My Notes
-                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
-                </a>
-              </nav>
-              <div id="content_block_scrollable" class="content_block_scrollable_container">
-                <div class="book_item">
-                  <span class="item_marker item_marker_blue">Hullin 133a</span>
-                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+            <div class="layout_right_col ">
+              <div class=" content_block scrollable">
+                <nav class="content_block_nav">
+                  <a class="nav_link nav_link_active" href="#">
+                    My Saves
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
+                  </a>
+                  <a class="nav_link" href="#">
+                    My Notes
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.3 74.61"><defs><style>.cls-1{fill:none;stroke:#8b7139;stroke-miterlimit:10;stroke-width:2px;}</style></defs><path class="cls-1" d="M175,74.88H9.54a6,6,0,0,1-6-6V8.27a6,6,0,0,1,6-6H175c.57-.2,29.57,37.9,29.57,37.9S175.34,74.6,175,74.88Z" transform="translate(-2.54 -1.27)"/></svg>
+                  </a>
+                </nav>
+                <div class="content_block_scrollable_container">
+                  <div class="book_item">
+                    <span class="item_marker item_marker_blue">Hullin 133a</span>
+                    <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                  </div>
+                  <div class="book_item">
+                    <span class="item_marker item_marker_violet">Berachot 7b</span>
+                    <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                  </div>
+                  <div class="book_item">
+                    <span class="item_marker item_marker_violet">Hullin 133a</span>
+                    <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                  </div>
+                  <div class="book_item">
+                    <span class="item_marker item_marker_violet">Berachot 7b</span>
+                    <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
+                  </div>
                 </div>
-                <div class="book_item">
-                  <span class="item_marker item_marker_violet">Berachot 7b</span>
-                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
-                </div>
-                <div class="book_item">
-                  <span class="item_marker item_marker_violet">Hullin 133a</span>
-                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
-                </div>
-                <div class="book_item">
-                  <span class="item_marker item_marker_violet">Berachot 7b</span>
-                  <p class="book_item_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, ad commodi deserunt dolorum ipsam, laudantium magni minus nesciunt odit officiis perspiciatis quam quisquam rem saepe sequi, soluta suscipit tempore.</span><span>Alias asperiores atque beatae commodi cum cupiditate, doloremque eaque eos ex facere illum inventore iste maxime molestiae nisi nobis nostrum obcaecati odio odit perspiciatis possimus, qui quia quisquam sint voluptatibus.</span></p>
-                </div>
+              </div>
+              <div class="scroll-track">
+                <div class="scroll-handle"></div>
               </div>
             </div>
           </main>
         </div>
-
       </section>
   </div>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" defer></script>
+  <script src="js/scroll.js" defer></script>
 </body>
 
 </html>

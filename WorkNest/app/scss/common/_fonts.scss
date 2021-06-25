@@ -13,3 +13,11 @@
     }
   }
 }
+
+@font-face {
+  font-family: "MyriadHebrew-Regular";
+  src: url("app/fonts/MyriadHebrew-Regular/MyriadHebrew-Regular.otf");
+  src: local("0"), local("app/fonts/MyriadHebrew-Regular/MyriadHebrew-Regular.woff") format("woff"),local("app/fonts/MyriadHebrew-Regular/MyriadHebrew-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}

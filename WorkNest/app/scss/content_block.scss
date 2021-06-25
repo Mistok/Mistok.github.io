@@ -1,15 +1,5 @@
 @import "common/vars";
 
-.content_block{
-  display: flex;
-  height: 90%;
-  width: 60%;
-  position: relative;
-  z-index: 1;
-
-  flex-direction: row;
-}
-
 .content_block_scrollable_container{
   padding-right: 110px;
   position: relative;
@@ -20,73 +10,31 @@
 }
 
 // text block styles
-
+.content_block{
+  display: flex;
+}
 .content_block_text{
   padding: 30px;
   background: $white;
-
-  .content_block_text_title{
-    font-weight: 200;
-    font-size: $font_size_h2;
-    margin-bottom: 20px;
-  }
-  .content_block_text_paragraph{
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
 }
-
-/* scrollbar customizing*/
-::-webkit-scrollbar { /* 1 - скроллбар */
-  width: 10px;
-  height: 4px;
-  background-color: transparent;
+.content_block_text_title{
+  font-weight: 200;
+  font-size: $font_size_h2;
+  margin-bottom: 20px;
 }
-::-webkit-scrollbar-button { /* 2 - кнопка */
+.content_block_text_paragraph{
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-family: "MyriadHebrew-Regular", sans-serif;
 }
-::-webkit-scrollbar-track { /* 3 - трек */
-
-}
-body::-webkit-scrollbar-thumb {
-  //background-color: darkgrey;
-
-}
-::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
-  padding-left: 5px;
-  width: 15px;
-  border-left: 1px solid $gold;
-}
-::-webkit-scrollbar-thumb { /* 5 - ползунок */
-  border-radius: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: $gold;
-}
-::-webkit-scrollbar-corner { /* 6 - уголок */
-
-}
-::-webkit-resizer { /* 7 - изменение размеров */
-  height: 10px;
-}
-html{
-  scrollbar-darkshadow-color: #32CD32
-}
-
 
 @media (max-width: 1400px) {
   .content_block_scrollable_container{
     padding-right: 50px;
   }
 }
-@media (max-width: 1200px) {
-
-}
 @media (max-width: 992px) {
-  .content_block{
-    width: auto;
-    margin-top: 40px;
 
-  }
   .content_block_scrollable_container{
     padding-right: 30px;
     overflow: initial;
@@ -100,7 +48,6 @@ html{
     padding: 15px;
   }
 }
-
 @media (max-width: 425px) {
   .content_block_text{
     padding: 10px;

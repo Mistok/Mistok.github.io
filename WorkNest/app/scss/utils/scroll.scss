@@ -1,0 +1,38 @@
+.limit-width {
+  flex: 0 1 auto;
+  width: 1200px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.scrollable {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+body.has-touch .scrollable {
+  overflow: auto;
+}
+.scroll-track {
+  position: absolute;
+  width: 14px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.scroll-track > .scroll-handle {
+  position: absolute;
+  right: 4px;
+  top: 0;
+  min-height: 48px;
+  width: 6px;
+  background-color: #93733D;
+  border-radius: 9px;
+  cursor: grab;
+}
+body.scroll-dragging * {
+  cursor: grabbing;
+
+  user-select: none;
+  -ms-user-select: none;
+}

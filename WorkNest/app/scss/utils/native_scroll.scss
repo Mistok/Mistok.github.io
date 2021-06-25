@@ -1,0 +1,33 @@
+@import "../common/vars";
+/* scrollbar customizing*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent $gold;
+}
+::-webkit-scrollbar { /* 1 - scrollbar */
+  width: 6px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-button { /* 2 - button */
+  display: none;
+}
+::-webkit-scrollbar-track { /* 3 - track */
+}
+body::-webkit-scrollbar-thumb {
+  //background-color: darkgrey;
+  //background-color: $gold;
+}
+::-webkit-scrollbar-track-piece { /* 4 - visible part of the track */
+  border-left: 1px solid $gold;
+}
+::-webkit-scrollbar-thumb { /* 5 - slider  */
+  border-radius: 3px;
+  width: 6px;
+  background-color: $gold;
+}
+::-webkit-scrollbar-corner { /* 6 -cornet  */
+
+}
+::-webkit-resizer { /* 7 - resizing */
+
+}
