@@ -50,9 +50,9 @@
 .binding_bottom{
   position: absolute;
   bottom: 20px;
-  width: 90px;
   display: flex;
   flex-direction: column;
+  width: 90px;
 }
 .binding_bottom_line{
   width: 100%;
@@ -79,12 +79,12 @@
         color: transparent;
         border-top: 3px solid $gold;
       }
-      &:before{
-        // single line after title
-        border-top: 3px solid $gold;
-        border-bottom: 3px solid $gold;
-        height: 10px;
-      }
+      //&:before{
+      //  // single line after title
+      //  border-top: 3px solid $gold;
+      //  border-bottom: 3px solid $gold;
+      //  height: 10px;
+      //}
       img{
         max-width: none;
         height: 25px;
@@ -99,7 +99,7 @@
     width: 40px;
   }
   .binding_bottom_line{
-    border-bottom: 3px solid $gold;
+    border-top: 3px solid $gold;
   }
 
 }

@@ -62,10 +62,11 @@
   display: flex;
 }
 .account_status_title{
-  font-size: 28px;
-  color: $gold;
   margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 400;
   text-transform: capitalize;
+  color: $gold;
 }
 .account_status_divider{
   display: flex;
@@ -206,7 +207,6 @@
     // vertical block with the status name
     font-size: 62px;
   }
-
   .account_status_statistic_number{
     // right side largest numbers
     font-size: 250px;

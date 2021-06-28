@@ -35,19 +35,18 @@
   flex-direction: row;
 }
 @media (max-width: 1400px) {
+  .main {
+    padding: 0 20px;
+  }
   .main_container{
     padding-top: 20px;
   }
   .layout_left_col{
     padding-right: 50px;
   }
-  .main{
-    padding: 30px;
-  }
 }
 @media (max-width: 1024px) {
   .main{
-    padding: 20px;
     flex-direction: column;
     height: auto;
   }

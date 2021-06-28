@@ -15,7 +15,7 @@
 }
 body::-webkit-scrollbar-thumb {
   //background-color: darkgrey;
-  //background-color: $gold;
+  background-color: $gold;
 }
 ::-webkit-scrollbar-track-piece { /* 4 - visible part of the track */
   border-left: 1px solid $gold;
